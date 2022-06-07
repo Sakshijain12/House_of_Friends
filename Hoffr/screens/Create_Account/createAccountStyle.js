@@ -4,18 +4,16 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    //alignItems: 'center',
   },
 
   logo:{
-    //position : 'absolute',
     marginTop : 150,
     alignItems: 'center',
     justifyContent : 'center'
   },
 
   back:{
-      marginTop:150,
+      marginTop:70,
       textAlign : 'left',
       margin : 50,
   },
@@ -26,23 +24,35 @@ export default StyleSheet.create({
       borderRadius : 15,
       fontSize:15,
       padding :10,
-      backgroundColor : '#FDFBFB'
+      marginBottom : 30
   },
 
-  code : {
-      backgroundColor : '#75D1CB',
-      fontSize:18,
-      borderRadius:10,
-      textAlign: 'center',
-      marginTop : 50,
-      color : '#fff',
-      margin :15,
-      padding:5
+  put : {
+    textAlign : 'right',
+    marginBottom :40
+  },
+
+  login : {
+      borderRadius : 25,
+      borderStyle : 'solid',
+      borderWidth:2,
+      borderColor : '#FDFBFB',
+      //marginTop :30,
+      textAlign : 'center',
+      backgroundColor :'#B4E4BC',
+      //color : '#656565',
+      fontSize :18,
+      padding :5
   },
 
   options:{
-      textAlign : 'center',
-      fontSize:18,
-      marginTop:5
+    textAlign : 'center',
+    fontSize:18,
+    marginTop:5,
+  },
+
+  bottom : {
+      marginTop:15,
   }
+
 });

@@ -1,16 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
-import { View, Text, Button } from 'react-native';
+import { View, Text, TextInput, Image} from 'react-native';
 import styles from "./loginStyle";
 
 export default function loginPage() {
   return (
     <View style={styles.container}>
       <View style = {styles.logo}>
-        <Button title='Logo'></Button>
+      <Image source={require('../../assets/Group31.png')}></Image>
       </View>
       <View style = {styles.back}>
           <Text>Email/Mobile Number</Text>
-          <Text style = {styles.box}></Text>
+          <TextInput style = {styles.box} placeholder = "Email"></TextInput>
           <Text style = {styles.code}>Send Verification Code</Text>
           <Text style = {styles.options}>-or-</Text>
           <Text style = {styles.options}>Login with</Text>

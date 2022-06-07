@@ -1,19 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
-import { View, Button } from 'react-native';
+import { View, Button, Image, Text } from 'react-native';
 import styles from "./firstStyle";
 
 export default function firstPage() {
   return (
     <View style={styles.container}>
       <View style = {styles.logo}>
-        <Button title='Logo' style = {styles.Bton}></Button>
+      <Image source={require('../../assets/Group31.png')}></Image>
       </View>
       <View style = {styles.back}>
         <View style = {styles.Bton}>
-          <Button title='Login' style = {styles.Bton}></Button>
+          <Text style = {styles.texting}>LOG IN</Text>
         </View>
         <View style = {styles.Bton}>
-          <Button title='Sign Up' style = {styles.Bton}></Button>
+        <Text style = {styles.texting}>SIGN UP</Text>
         </View>
       </View>
       <StatusBar style="auto" />
