@@ -1,8 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { View, Image, Text } from 'react-native';
-import styles from "./firstStyle";
+import styles from "./profileSetStyle";
 
-export default function firstPage() {
+export default function ProfileSet() {
   return (
     <View style={styles.container}>
       <View style = {styles.logo}>

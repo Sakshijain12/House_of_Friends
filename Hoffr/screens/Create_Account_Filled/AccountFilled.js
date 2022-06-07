@@ -1,8 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { View, Text, TextInput, Image } from 'react-native';
-import styles from "./createAccountStyle";
+import styles from "./accountFilledStyle";
 
-export default function CreateAccount() {
+export default function AccountFilled() {
   return (
     <View style={styles.container}>
       <View style = {styles.logo}>
@@ -12,19 +12,13 @@ export default function CreateAccount() {
           <Text>Email</Text>
           <TextInput style = {styles.box} placeholder = "Email"></TextInput>
           
-          
           <Text>Mobile Number</Text>
           <TextInput style = {styles.box} placeholder = "Mobile Number"></TextInput>
+
+          <Text>Verification Code (OTP)</Text>
+          <TextInput style = {styles.box} placeholder = "OTP"></TextInput>
           
-          <Text style = {styles.login}>Send Verification Code</Text>
-          <View style = {styles.bottom}>
-            <Text style = {styles.options1}>-or-</Text>
-            <Text style = {styles.options1}>Sign up with</Text>
-            <View style={styles.sign}>
-              <Image source={require('../../assets/google.png')} style={styles.google}></Image>
-              <Text style = {styles.options2}>Google</Text>
-            </View>
-          </View>
+          <Text style = {styles.login}>NEXT STEP</Text>
       </View>
       <StatusBar style="auto" />
     </View>
