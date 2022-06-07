@@ -13,7 +13,12 @@ export default StyleSheet.create({
   Bton : {
     margin : 15,
     width : 250,
-    backgroundColor : '#fff',
+    backgroundColor : '#75D1CB',
+    padding :5,
+  },
+  texting: {
+    color : '#fff',
+    textAlign : 'center',
   },
   back:{
     marginTop : 600,
