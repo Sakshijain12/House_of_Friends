@@ -27,53 +27,16 @@ export default StyleSheet.create({
       marginBottom : 30
   },
 
-  put : {
-    textAlign : 'right',
-    marginBottom :40
-  },
-
   login : {
       borderRadius : 25,
       borderStyle : 'solid',
       borderWidth:2,
       borderColor : '#FDFBFB',
-      //marginTop :30,
+      marginTop :30,
       textAlign : 'center',
       backgroundColor :'#B4E4BC',
-      //color : '#656565',
       fontSize :18,
       padding :5
-  },
-
-  options1:{
-    textAlign : 'center',
-    fontSize:18,
-    marginTop:5,
-  },
-
-  bottom : {
-      marginTop:15,
-  },
-
-  google:{
-      backgroundColor : '#fff',
-      width :30,
-      height : 30,
-      marginLeft : 50,
-      marginTop :20,
-  },
-
-  sign : {
-      flexDirection : 'row',
-      alignItems : 'center',
-      marginLeft:40
-  },
-
-  options2:{
-    textAlign : 'center',
-    fontSize:18,
-    marginTop:15,
-    marginLeft : 15
   },
 
 });
