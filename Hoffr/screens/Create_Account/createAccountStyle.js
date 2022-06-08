@@ -1,4 +1,5 @@
 import { StyleSheet} from 'react-native';
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
 export default StyleSheet.create({
   container: {
@@ -7,73 +8,68 @@ export default StyleSheet.create({
   },
 
   logo:{
-    marginTop : 150,
+    marginTop : hp('10%'),
     alignItems: 'center',
     justifyContent : 'center'
   },
 
   back:{
-      marginTop:70,
+      marginTop:hp('10%'),
       textAlign : 'left',
-      margin : 50,
+      margin : wp('10%'),
   },
 
   box : {
       borderStyle : 'solid',
       borderWidth : 2,
-      borderRadius : 15,
+      borderRadius : wp('5%'),
       fontSize:15,
-      padding :10,
-      marginBottom : 30
-  },
-
-  put : {
-    textAlign : 'right',
-    marginBottom :40
+      padding :wp('2.5%'),
+      marginBottom : hp('4%')
   },
 
   login : {
-      borderRadius : 25,
+      borderRadius : wp('6%'),
       borderStyle : 'solid',
       borderWidth:2,
       borderColor : '#FDFBFB',
-      //marginTop :30,
+      marginTop :hp('4%'),
       textAlign : 'center',
-      backgroundColor :'#B4E4BC',
-      //color : '#656565',
+      backgroundColor :'#75D1CB',
+      color : '#fff',
       fontSize :18,
-      padding :5
+      padding :wp('1.5%')
   },
 
   options1:{
     textAlign : 'center',
     fontSize:18,
-    marginTop:5,
+    marginTop:hp('0.8%'),
   },
 
   bottom : {
-      marginTop:15,
+      marginTop:hp('1%'),
   },
 
   google:{
-      backgroundColor : '#fff',
-      width :30,
-      height : 30,
-      marginLeft : 50,
-      marginTop :20,
+    backgroundColor : '#fff',
+    width :wp("10%"),
+    height : hp('5%'),
+    marginLeft : wp('15%'),
+    marginTop :hp('3%'),
   },
 
   sign : {
-      flexDirection : 'row',
-      alignItems : 'center',
-      marginLeft:40
-  },
+    flexDirection : 'row',
+    alignItems : 'center',
+    marginLeft:wp('10%')
+},
 
-  options2:{
-    textAlign : 'center',
-    fontSize:18,
-    marginTop:15,
-    marginLeft : 15
-  },
+options2:{
+  textAlign : 'center',
+  fontSize:18,
+  marginTop:hp('2%'),
+  marginLeft : wp('5%')
+},
 
 });

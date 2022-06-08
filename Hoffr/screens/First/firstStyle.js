@@ -1,4 +1,5 @@
 import { StyleSheet} from 'react-native';
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
 export default StyleSheet.create({
   container: {
@@ -8,19 +9,20 @@ export default StyleSheet.create({
   },
   logo:{
     position : 'absolute',
-    marginTop : 250,
+    marginTop : hp('30%'),
   },
   Bton : {
-    margin : 15,
-    width : 250,
+    margin : hp('1%'),
+    width : wp('70%'),
     backgroundColor : '#75D1CB',
     padding :5,
+    borderRadius :15
   },
   texting: {
     color : '#fff',
     textAlign : 'center',
   },
   back:{
-    marginTop : 600,
+    marginTop : hp('60%'),
   }
 });

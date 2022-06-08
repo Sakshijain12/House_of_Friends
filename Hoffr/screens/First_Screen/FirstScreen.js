@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { View, Image, Text, TextInput } from 'react-native';
-import styles from "./profileSetStyle";
+import styles from "./firstScreenStyle";
 
 export default function ProfileSet() {
   return (
@@ -9,11 +9,9 @@ export default function ProfileSet() {
       <Image source={require('../../assets/Group31.png')}></Image>
       </View>
       <View style = {styles.back}>
-        <Text>Display Picture</Text>
-        <Text style = {styles.pic}></Text>
-        <Text>Display Name</Text>
-        <TextInput style = {styles.name}></TextInput>
-        <Text style= {styles.bton}>CREATE ACCOUNT</Text>
+        <Text style = {styles.question}>What would you like to do?</Text>
+        <Text style = {styles.option}>Create New House</Text>
+        <Text style = {styles.option}>Join House</Text>
       </View>
       <StatusBar style="auto" />
     </View>
