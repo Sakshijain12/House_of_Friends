@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { View, Text, TextInput, Image } from 'react-native';
-import styles from "./accountFilledStyle";
+import styles from "./createAccountStyle";
 
 export default function AccountFilled() {
   return (

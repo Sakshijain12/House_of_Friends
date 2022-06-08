@@ -17,9 +17,10 @@ export default StyleSheet.create({
     textAlign : 'center',
   },
   question : {
-    fontSize :25,  
+    fontSize :25,
+    textAlign : 'center'  
   },
-  option : {
+  option1 : {
     fontSize :hp('4%'),
     borderWidth : 2,
     padding :15,
@@ -30,8 +31,27 @@ export default StyleSheet.create({
     marginRight : wp('10%'),
     textAlign : 'center',
     borderRadius :hp('7.5%'),
-    height : hp('25%'),
+    height : hp('22%'),
     backgroundColor : '#75D1CB',
     color : '#fff',
+    justifyContent : 'center',
+    paddingVertical :hp('2%')
+  },
+  option2 : {
+    fontSize :hp('4%'),
+    borderWidth : 2,
+    padding :15,
+    backgroundColor : 'grey',
+    marginTop : hp('5%'),
+    borderColor : '#fff',
+    marginLeft : wp('10%'),
+    marginRight : wp('10%'),
+    textAlign : 'center',
+    borderRadius :hp('7.5%'),
+    height : hp('22%'),
+    backgroundColor : '#75D1CB',
+    color : '#fff',
+    justifyContent : 'center',
+    paddingVertical :hp('4.5%')
   },
 });
