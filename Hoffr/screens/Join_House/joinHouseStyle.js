@@ -20,71 +20,45 @@ export default StyleSheet.create({
   },
 
   email : {
-    marginLeft : wp('2%')
+    marginLeft : wp('2%'),
+    fontSize : hp('2.5%'),
+    textAlign : 'center',
+    marginBottom : hp('4%'),
+    fontWeight : 'bold'
   },
 
   box : {
       borderStyle : 'solid',
       borderWidth : 2,
       borderRadius : hp('3%'),
-      fontSize:15,
+      fontSize:18,
       padding :hp("1%"),
+      textAlign : 'center'
   },
 
   code : {
       backgroundColor : '#75D1CB',
-      fontSize:18,
+      fontSize:hp('2.5%'),
       borderRadius:wp('15%'),
       textAlign: 'center',
       marginTop : hp('8%'),
       color : '#fff',
-      margin :hp('1%'),
+      margin :wp('15%'),
       padding:hp('0.7%'),
   },
 
-  options:{
+  or : {
+    textAlign : 'center',
+      fontSize:18,
+      marginTop:hp('-2%')
+  },
+
+  link:{
       textAlign : 'center',
       fontSize:18,
-      marginTop:hp('0.6%')
+      marginTop:hp('0.6%'),
+      fontWeight : 'bold',
+      marginTop : hp('4%'),
+      margin : wp('20%')
   },
-
-  google:{
-    backgroundColor : '#fff',
-    width :wp("10%"),
-    height : hp('5%'),
-    marginLeft : wp('15%'),
-    marginTop :hp('3%'),
-  },
-
-  sign : {
-    flexDirection : 'row',
-    alignItems : 'center',
-    marginLeft:wp('10%')
-  },
-
-  options2:{
-    textAlign : 'center',
-    fontSize:18,
-    marginTop:hp('2%'),
-    marginLeft : wp('5%')
-  },
-
-  put : {
-    textAlign : 'right',
-    marginBottom :hp('5%')
-  },
-
-  login : {
-      backgroundColor : '#75D1CB',
-      fontSize :18,
-      borderRadius : wp('15%'),
-      textAlign : 'center',
-      borderStyle : 'solid',
-      borderWidth:2,
-      borderColor : '#FDFBFB',
-      marginTop :hp('5%'),
-      color : '#fff',
-      padding :wp('2%'),
-  },
-
 });

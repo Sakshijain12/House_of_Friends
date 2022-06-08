@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { View, Text, TextInput, Image } from 'react-native';
-import styles from "./loginFilledStyles";
+import styles from "./loginStyle";
 
 export default function LoginFilledPage() {
   return (
