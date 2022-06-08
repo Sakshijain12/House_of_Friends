@@ -1,4 +1,5 @@
 import { StyleSheet} from 'react-native';
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
 export default StyleSheet.create({
   container: {
@@ -7,15 +8,15 @@ export default StyleSheet.create({
   },
 
   logo:{
-    marginTop : 150,
+    marginTop : hp('10%'),
     alignItems: 'center',
     justifyContent : 'center'
   },
 
   back:{
-      marginTop:100,
+      marginTop:hp('10%'),
       textAlign : 'left',
-      margin : 50,
+      margin : wp('10%'),
   },
 
   box : {
@@ -23,25 +24,25 @@ export default StyleSheet.create({
       borderWidth : 2,
       borderRadius : 15,
       fontSize:15,
-      padding :10,
+      padding :wp('2.5%'),
   },
 
   put : {
     textAlign : 'right',
-    marginBottom :40
+    marginBottom :hp('5%')
   },
 
   login : {
-      borderRadius : 25,
+      borderRadius : wp('15%'),
       borderStyle : 'solid',
       borderWidth:2,
       borderColor : '#FDFBFB',
-      marginTop :30,
+      marginTop :hp('5%'),
       textAlign : 'center',
-      backgroundColor : '#656565',
+      backgroundColor : '#75D1CB',
       color : '#fff',
       fontSize :18,
-      padding :5
+      padding :wp('2%'),
   },
 
 });

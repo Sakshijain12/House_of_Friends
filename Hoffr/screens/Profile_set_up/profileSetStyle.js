@@ -1,4 +1,5 @@
 import { StyleSheet} from 'react-native';
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
 export default StyleSheet.create({
   container: {
@@ -8,19 +9,39 @@ export default StyleSheet.create({
   },
   logo:{
     position : 'absolute',
-    marginTop : 250,
-  },
-  Bton : {
-    margin : 15,
-    width : 250,
-    backgroundColor : '#75D1CB',
-    padding :5,
-  },
-  texting: {
-    color : '#fff',
-    textAlign : 'center',
+    marginTop : hp('10%'),
   },
   back:{
-    marginTop : 600,
-  }
+    marginTop : hp('30%'),
+    alignItems : 'center',
+  },
+  pic : {
+    height : hp('14%'),
+    width :hp('14%'),
+    backgroundColor : '#75D1CB',
+    marginTop : hp('2%'),
+    marginBottom : hp('5%'),
+    borderRadius : hp('7%')
+  },
+  name : {
+    borderWidth :2,
+    borderStyle : 'solid',
+    width : wp('80%'),
+    borderRadius : 15,
+    height : hp('5%'),
+    padding: wp('3%'),
+    marginTop :hp('2%'),
+  },
+  bton : {
+    marginTop : hp('10%'),
+    width : wp('70%'),
+    borderWidth : 2,
+    backgroundColor : '#75D1CB',
+    textAlign : 'center',
+    borderColor : '#fff',
+    padding : hp('0.4%'),
+    borderRadius :15,
+    fontSize :18,
+    color : '#fff'
+  },
 });
