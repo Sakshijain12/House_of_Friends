@@ -1,15 +1,32 @@
-import First from './screens/First/First';
-import Login from './screens/Login/Login';
-import LoginFilled from './screens/Login/LoginFilled';
+import FirstPage from './screens/First/First';
+import LoginPage from './screens/Login/Login';
+import LoginFilledPage from './screens/Login/LoginFilled';
 import CreateAccount from "./screens/Create_Account/CreateAccount";
-import CreateFilled from "./screens/Create_Account/AccountFilled";
+import AccountFilled from "./screens/Create_Account/AccountFilled";
 import ProfileSet from './screens/Profile_set_up/ProfileSet';
-import FirstScreen from './screens/First_Screen/FirstScreen';
+import FirstScreenPage from './screens/First_Screen/FirstScreen';
 import CreateHouse from './screens/Create_House/CreateHouse';
 import JoinHouse from './screens/Join_House/JoinHouse';
 
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+const  Stack = createNativeStackNavigator();
+
 export default function App() {
   return (
-    <JoinHouse></JoinHouse>
+    <NavigationContainer>
+      <Stack.Navigator screenOptions= {{headerShown : false}}>
+        <Stack.Screen name = 'HomeScreen' component={FirstPage}></Stack.Screen>
+        <Stack.Screen name = 'LoginScreen' component={LoginPage}></Stack.Screen>
+        <Stack.Screen name = 'LoginFilledScreen' component={LoginFilledPage}></Stack.Screen>
+        <Stack.Screen name = 'CreateAccountScreen' component={CreateAccount}></Stack.Screen>
+        <Stack.Screen name = 'AccountFilledScreen' component={AccountFilled}></Stack.Screen>
+        <Stack.Screen name = 'ProfileSetScreen' component={ProfileSet}></Stack.Screen>
+        <Stack.Screen name = 'FirstScreen' component={FirstScreenPage}></Stack.Screen>
+        <Stack.Screen name = 'CreateHouseScreen' component={CreateHouse}></Stack.Screen>
+        <Stack.Screen name = 'JoinHouseScreen' component={JoinHouse}></Stack.Screen>
+      </Stack.Navigator>  
+    </NavigationContainer>
   )
 }

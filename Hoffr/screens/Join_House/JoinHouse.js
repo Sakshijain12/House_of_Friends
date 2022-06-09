@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { View, Text, TextInput, Image} from 'react-native';
 import styles from "./joinHouseStyle";
 
-export default function loginPage() {
+export default function JoinHouse() {
   return (
     <View style={styles.container}>
       <View style = {styles.logo}>

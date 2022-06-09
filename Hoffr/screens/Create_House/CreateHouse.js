@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { View, Image, Text, TextInput } from 'react-native';
 import styles from "./createHouseStyle";
 
-export default function ProfileSet() {
+export default function CreateHouse() {
   return (
     <View style={styles.container}>
       <View style = {styles.logo}>

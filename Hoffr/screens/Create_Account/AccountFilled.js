@@ -1,8 +1,14 @@
+import { useNavigation, useRoute } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
 import { View, Text, TextInput, Image } from 'react-native';
 import styles from "./createAccountStyle";
 
 export default function AccountFilled() {
+  const route = useRoute();
+  const navigation = useNavigation();
+  const profile = () => {
+    navigation.navigate('ProfileSetScreen')
+  }
   return (
     <View style={styles.container}>
       <View style = {styles.logo}>
@@ -10,15 +16,15 @@ export default function AccountFilled() {
       </View>
       <View style = {styles.back}>
           <Text>Email</Text>
-          <TextInput style = {styles.box} placeholder = "Email"></TextInput>
+          <Text style = {styles.box}> {route.params.email} </Text>
           
           <Text>Mobile Number</Text>
-          <TextInput style = {styles.box} placeholder = "Mobile Number"></TextInput>
+          <Text style = {styles.box}> {route.params.mobile} </Text>
 
           <Text>Verification Code (OTP)</Text>
           <TextInput style = {styles.box} placeholder = "OTP"></TextInput>
           
-          <Text style = {styles.login}>NEXT STEP</Text>
+          <Text style = {styles.login} onPress = {profile}>NEXT STEP</Text>
       </View>
       <StatusBar style="auto" />
     </View>

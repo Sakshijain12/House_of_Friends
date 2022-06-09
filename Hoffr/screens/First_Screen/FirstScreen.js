@@ -1,8 +1,16 @@
+import { useNavigation } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
 import { View, Image, Text, TextInput } from 'react-native';
 import styles from "./firstScreenStyle";
 
-export default function ProfileSet() {
+export default function FirstScreenPage() {
+  const navigation = useNavigation();
+  const createHouse = () => {
+    navigation.navigate('CreateHouseScreen')
+  }
+  const joinHouse = () => {
+    navigation.navigate('JoinHouseScreen')
+  }
   return (
     <View style={styles.container}>
       <View style = {styles.logo}>
@@ -10,8 +18,8 @@ export default function ProfileSet() {
       </View>
       <View style = {styles.back}>
         <Text style = {styles.question}>What would you like to do?</Text>
-        <Text style = {styles.option1}>Create New House</Text>
-        <Text style = {styles.option2}>Join House</Text>
+        <Text style = {styles.option1} onPress = {createHouse}>Create New House</Text>
+        <Text style = {styles.option2} onPress = {joinHouse}>Join House</Text>
         
       </View>
       <StatusBar style="auto" />
