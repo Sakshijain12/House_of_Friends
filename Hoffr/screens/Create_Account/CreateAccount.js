@@ -1,8 +1,20 @@
+import { useNavigation } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
 import { View, Text, TextInput, Image } from 'react-native';
+import { useState } from 'react';
 import styles from "./createAccountStyle";
 
 export default function CreateAccount() {
+  const [email, setEmail] = useState();
+  const [mobile, setMobile] = useState();
+
+  const navigation = useNavigation();
+  const sign = () => {
+    navigation.navigate('AccountFilledScreen',{
+      email : email,
+      mobile : mobile,
+    })
+  }
   return (
     <View style={styles.container}>
       <View style = {styles.logo}>
@@ -10,12 +22,24 @@ export default function CreateAccount() {
       </View>
       <View style = {styles.back}>
           <Text>Email</Text>
-          <TextInput style = {styles.box} placeholder = "Email"></TextInput>
+          <TextInput 
+            style = {styles.box} 
+            placeholder = "Email"
+            value = {email}
+            type = 'email'
+            onChangeText = {(text) => setEmail(text)}>
+          </TextInput>
           
           <Text>Mobile Number</Text>
-          <TextInput style = {styles.box} placeholder = "Mobile Number"></TextInput>
+          <TextInput 
+            style = {styles.box} 
+            placeholder = "Mobile Number"
+            value = {mobile}
+            keyboardType={'phone-pad'}
+            onChangeText = {(text) => setMobile(text)}>
+          </TextInput>
           
-          <Text style = {styles.login}>Send Verification Code</Text>
+          <Text style = {styles.login} onPress = {sign}>Send Verification Code</Text>
           <View style = {styles.bottom}>
             <Text style = {styles.options1}>-or-</Text>
             <Text style = {styles.options1}>Sign up with</Text>

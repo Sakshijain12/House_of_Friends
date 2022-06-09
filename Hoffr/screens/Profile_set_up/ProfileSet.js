@@ -1,8 +1,13 @@
+import { useNavigation } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
 import { View, Image, Text, TextInput } from 'react-native';
 import styles from "./profileSetStyle";
 
 export default function ProfileSet() {
+  const navigation = useNavigation();
+  const accountCreated = () => {
+    navigation.navigate('FirstScreen')
+  }
   return (
     <View style={styles.container}>
       <View style = {styles.logo}>
@@ -13,7 +18,7 @@ export default function ProfileSet() {
         <Text style = {styles.pic}></Text>
         <Text>Display Name</Text>
         <TextInput style = {styles.name}></TextInput>
-        <Text style= {styles.bton}>CREATE ACCOUNT</Text>
+        <Text style= {styles.bton} onPress = {accountCreated}>CREATE ACCOUNT</Text>
       </View>
       <StatusBar style="auto" />
     </View>
