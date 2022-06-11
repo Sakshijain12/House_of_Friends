@@ -12,19 +12,26 @@ export default StyleSheet.create({
     marginTop : hp('10%'),
   },
   back:{
-    marginTop : hp('30%'),
+    marginTop : hp('25%'),
     alignItems : 'center',
+  },
+  welcome : {
+    marginTop : hp('4%'),
+    fontWeight : '500',
+    fontSize : hp('2%')
+  },
+  house : {
+    marginTop : hp('4%'),
+    fontWeight : '500'
   },
   pic : {
     height : hp('14%'),
     width :hp('14%'),
     backgroundColor : '#75D1CB',
     marginTop : hp('2%'),
-    marginBottom : hp('4%'),
+    marginBottom : hp('5%'),
     borderRadius : hp('7%'),
-    textAlign : 'center',
-    textAlignVertical : 'center',
-    color : '#fff'
+  
   },
   name : {
     borderWidth :2,
@@ -50,16 +57,22 @@ export default StyleSheet.create({
   box : {
     borderRadius : 15,
     borderStyle : 'solid',
-    borderWidth :2,
-    padding : 10,
-    marginTop : hp('1%'),
-    fontWeight : '500'
+    backgroundColor : 'red'
   },
-  newChannel : {
+  profile : {
+    width : wp('10%'),
+    height : wp('10%'),
+    backgroundColor : '#F9C460',
+    borderRadius : wp('5%')
+  },
+  gap : {
+    alignSelf : 'flex-start',
+    flexDirection : 'row',
     marginTop : hp('1%'),
-    fontWeight : '500'
+    marginLeft : wp('10%')
   },
   text : {
-    fontStyle : 'italic',
+    marginTop : hp('1%'),
+    marginLeft : wp("6%")
   },
 });
