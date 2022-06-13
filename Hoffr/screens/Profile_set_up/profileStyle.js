@@ -18,16 +18,16 @@ export default StyleSheet.create({
   pic : {
     height : hp('14%'),
     width :hp('14%'),
-    backgroundColor : '#75D1CB',
     marginTop : hp('2%'),
     marginBottom : hp('5%'),
-    borderRadius : hp('7%')
+    borderRadius : hp('7%'),
+    backgroundColor : '#75D1CB',
   },
   name : {
     borderWidth :2,
     borderStyle : 'solid',
     width : wp('80%'),
-    borderRadius : 15,
+    borderRadius : 12,
     height : hp('5%'),
     padding: wp('3%'),
     marginTop :hp('2%'),
@@ -40,8 +40,8 @@ export default StyleSheet.create({
     textAlign : 'center',
     borderColor : '#fff',
     padding : hp('0.4%'),
-    borderRadius :15,
-    fontSize :18,
+    borderRadius :12,
+    fontSize :20,
     color : '#fff'
   },
 });

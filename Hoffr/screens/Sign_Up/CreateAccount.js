@@ -18,7 +18,7 @@ export default function CreateAccount() {
   return (
     <View style={styles.container}>
       <View style = {styles.logo}>
-        <Image source={require('../../assets/Group31.png')}></Image>
+        <Image source={require('../../assets/Group30.png')}></Image>
       </View>
       <View style = {styles.back}>
           <Text>Email</Text>
@@ -41,7 +41,7 @@ export default function CreateAccount() {
           
           <Text style = {styles.login} onPress = {sign}>Send Verification Code</Text>
           <View style = {styles.bottom}>
-            <Text style = {styles.options1}>-or-</Text>
+            <Text style = {styles.options}>- or -</Text>
             <Text style = {styles.options1}>Sign up with</Text>
           </View>  
           <View style={styles.sign}>

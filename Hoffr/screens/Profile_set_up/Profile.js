@@ -6,7 +6,7 @@ import styles from "./profileStyle";
 export default function ProfileSet() {
   const navigation = useNavigation();
   const accountCreated = () => {
-    navigation.navigate('FirstScreen')
+    navigation.navigate('ProfileSetScreen')
   }
   return (
     <View style={styles.container}>
@@ -15,7 +15,7 @@ export default function ProfileSet() {
       </View>
       <View style = {styles.back}>
         <Text>Display Picture</Text>
-        <Image source={require('../../assets/blank.jpg')} style = {styles.pic}></Image>
+        <Text style = {styles.pic}></Text>
         <Text>Display Name</Text>
         <TextInput style = {styles.name}></TextInput>
         <Text style= {styles.bton} onPress = {accountCreated}>Create Account</Text>

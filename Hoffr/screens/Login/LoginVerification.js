@@ -15,7 +15,7 @@ export default function LoginFilledPage() {
   return (
     <View style={styles.container}>
       <View style = {styles.logo}>
-        <Image source={require('../../assets/Group31.png')}></Image>
+        <Image source={require('../../assets/Group30.png')}></Image>
       </View>
       <View style = {styles.back}>
           <Text>Email/Mobile Number</Text>
@@ -25,7 +25,7 @@ export default function LoginFilledPage() {
           <Text>Verification Code (OTP)</Text>
           <TextInput style = {styles.box} placeholder = "OTP"></TextInput>
           <Text style = {styles.put}>Resend code</Text>
-          <Text style = {styles.login} onPress = {login}>LOG IN</Text>
+          <Text style = {styles.login} onPress = {login}>Log In</Text>
       </View>
       <StatusBar style="auto" />
     </View>
