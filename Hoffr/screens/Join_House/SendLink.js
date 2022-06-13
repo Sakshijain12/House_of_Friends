@@ -6,7 +6,7 @@ export default function SendLink() {
   return (
     <View style={styles.container}>
       <View style = {styles.logo}>
-        <Image source={require('../../assets/Group31.png')}></Image>
+        <Image source={require('../../assets/Group30.png')}></Image>
       </View>
       <View style = {styles.back}>
         <Text style = {styles.welcome}>Welcome!</Text>

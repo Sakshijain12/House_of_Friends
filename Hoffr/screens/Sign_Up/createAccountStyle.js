@@ -14,7 +14,7 @@ export default StyleSheet.create({
   },
 
   back:{
-      marginTop:hp('10%'),
+      marginTop:hp('8%'),
       textAlign : 'left',
       margin : wp('10%'),
   },
@@ -22,14 +22,15 @@ export default StyleSheet.create({
   box : {
       borderStyle : 'solid',
       borderWidth : 2,
-      borderRadius : wp('5%'),
+      borderRadius : 12,
       fontSize:15,
       padding :wp('2.5%'),
-      marginBottom : hp('4%')
+      marginBottom : hp('4%'),
+      marginTop : hp('1%')
   },
 
   login : {
-      borderRadius : wp('6%'),
+      borderRadius : 12,
       borderStyle : 'solid',
       borderWidth:2,
       borderColor : '#FDFBFB',
@@ -37,14 +38,20 @@ export default StyleSheet.create({
       textAlign : 'center',
       backgroundColor :'#75D1CB',
       color : '#fff',
-      fontSize :18,
+      fontSize :20,
       padding :wp('1.5%')
+  },
+
+  options:{
+    textAlign : 'center',
+    fontSize:18,
+    marginTop:hp('4%'),
   },
 
   options1:{
     textAlign : 'center',
     fontSize:18,
-    marginTop:hp('0.8%'),
+    marginTop:hp('3%'),
   },
 
   bottom : {
@@ -62,7 +69,7 @@ export default StyleSheet.create({
   sign : {
     flexDirection : 'row',
     alignItems : 'center',
-    marginLeft:wp('10%')
+    marginLeft:wp('8%')
 },
 
 options2:{

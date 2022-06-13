@@ -9,20 +9,21 @@ export default StyleSheet.create({
   },
   logo:{
     position : 'absolute',
-    marginTop : hp('30%'),
+    marginTop : hp('23%'),
   },
   Bton : {
-    margin : hp('1%'),
+    margin : hp('2.5%'),
     width : wp('70%'),
     backgroundColor : '#75D1CB',
     padding :5,
-    borderRadius :15
+    borderRadius :12,
   },
   texting: {
     color : '#fff',
     textAlign : 'center',
+    fontSize :20
   },
   back:{
-    marginTop : hp('60%'),
+    marginTop : hp('54%'),
   }
 });

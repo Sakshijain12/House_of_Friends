@@ -8,7 +8,7 @@ export default StyleSheet.create({
   },
 
   logo:{
-    marginTop : hp('10%'),
+    marginTop : hp('14%'),
     alignItems: 'center',
     justifyContent : 'center'
   },
@@ -26,15 +26,15 @@ export default StyleSheet.create({
   box : {
       borderStyle : 'solid',
       borderWidth : 2,
-      borderRadius : hp('3%'),
+      borderRadius : 12,
       fontSize:15,
       padding :hp("1%"),
   },
 
   code : {
       backgroundColor : '#75D1CB',
-      fontSize:18,
-      borderRadius:wp('15%'),
+      fontSize:20,
+      borderRadius:12,
       textAlign: 'center',
       marginTop : hp('8%'),
       color : '#fff',
@@ -42,10 +42,16 @@ export default StyleSheet.create({
       padding:hp('0.7%'),
   },
 
+  option:{
+    textAlign : 'center',
+    fontSize:18,
+    marginTop:hp('2%')
+  },
+
   options:{
       textAlign : 'center',
       fontSize:18,
-      marginTop:hp('0.6%')
+      marginTop:hp('3%')
   },
 
   google:{
@@ -59,7 +65,7 @@ export default StyleSheet.create({
   sign : {
     flexDirection : 'row',
     alignItems : 'center',
-    marginLeft:wp('10%')
+    marginLeft:wp('8%')
   },
 
   options2:{
@@ -76,8 +82,8 @@ export default StyleSheet.create({
 
   login : {
       backgroundColor : '#75D1CB',
-      fontSize :18,
-      borderRadius : wp('15%'),
+      fontSize :20,
+      borderRadius :12,
       textAlign : 'center',
       borderStyle : 'solid',
       borderWidth:2,

@@ -38,7 +38,7 @@ export default StyleSheet.create({
 
   code : {
       backgroundColor : '#75D1CB',
-      fontSize:hp('2.5%'),
+      fontSize:20,
       borderRadius:wp('15%'),
       textAlign: 'center',
       marginTop : hp('8%'),

@@ -11,14 +11,14 @@ export default function JoinHouse() {
   return (
     <View style={styles.container}>
       <View style = {styles.logo}>
-      <Image source={require('../../assets/Group31.png')}></Image>
+      <Image source={require('../../assets/Group30.png')}></Image>
       </View>
       <View style = {styles.back}>
           <Text style = {styles.email}>Add joining code</Text>
           <TextInput style = {styles.box} placeholder = "Code"></TextInput>
           <Text style = {styles.code} onPress = {join}>Join</Text>
-          <Text style = {styles.or}>-or-</Text>
-          <Text style = {styles.link}>Click invite link sent to you</Text>
+          <Text style = {styles.or}>- or -</Text>
+          <Text style = {styles.link}>Click the invite link sent to you</Text>
       </View>
       <StatusBar style="auto" />
     </View>

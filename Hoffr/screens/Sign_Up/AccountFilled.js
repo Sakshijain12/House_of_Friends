@@ -7,12 +7,12 @@ export default function AccountFilled() {
   const route = useRoute();
   const navigation = useNavigation();
   const profile = () => {
-    navigation.navigate('ProfileSetScreen')
+    navigation.navigate('ProfileScreen')
   }
   return (
     <View style={styles.container}>
       <View style = {styles.logo}>
-        <Image source={require('../../assets/Group31.png')}></Image>
+        <Image source={require('../../assets/Group30.png')}></Image>
       </View>
       <View style = {styles.back}>
           <Text>Email</Text>

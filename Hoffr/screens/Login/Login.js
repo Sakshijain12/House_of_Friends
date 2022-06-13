@@ -16,10 +16,10 @@ export default function LoginPage() {
   return (
     <View style={styles.container}>
       <View style = {styles.logo}>
-      <Image source={require('../../assets/Group31.png')}></Image>
+      <Image source={require('../../assets/Group30.png')}></Image>
       </View>
       <View style = {styles.back}>
-          <Text style = {styles.email}>Email/Mobile Number</Text>
+          <Text style = {styles.email}>Email/ Mobile Number</Text>
           <TextInput 
             style = {styles.box} 
             placeholder = "Email" 
@@ -27,7 +27,7 @@ export default function LoginPage() {
             type = 'email'
             onChangeText={(text) => setEmail(text)}></TextInput>
           <Text style = {styles.code} onPress = {loginFilled}>Send Verification Code</Text>
-          <Text style = {styles.options}>-or-</Text>
+          <Text style = {styles.option}>- or -</Text>
           <Text style = {styles.options}>Login with</Text>
           <View style={styles.sign}>
               <Image source={require('../../assets/google.png')} style={styles.google}></Image>

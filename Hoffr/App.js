@@ -1,9 +1,10 @@
-import FirstPage from './screens/First/First';
+import Login_OR_Signup from './screens/Login_signup Screen/First';
 import LoginPage from './screens/Login/Login';
-import LoginFilledPage from './screens/Login/LoginFilled';
-import CreateAccount from "./screens/Create_Account/CreateAccount";
-import AccountFilled from "./screens/Create_Account/AccountFilled";
-import ProfileSet from './screens/Profile_set_up/ProfileSet';
+import LoginFilledPage from './screens/Login/LoginVerification';
+import CreateAccount from "./screens/Sign_Up/CreateAccount";
+import AccountFilled from "./screens/Sign_Up/AccountFilled";
+import Profile from './screens/Profile_set_up/Profile';
+import ProfileSet from './screens/Profile_set_up/ProfileSet'
 import FirstScreenPage from './screens/First_Screen/FirstScreen';
 import CreateHouse from './screens/Create_House/CreateHouse';
 import JoinHouse from './screens/Join_House/JoinHouse';
@@ -19,11 +20,12 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions= {{headerShown : false}}>
-        <Stack.Screen name = 'HomeScreen' component={FirstPage}></Stack.Screen>
+        <Stack.Screen name = 'HomeScreen' component={Login_OR_Signup}></Stack.Screen>
         <Stack.Screen name = 'LoginScreen' component={LoginPage}></Stack.Screen>
         <Stack.Screen name = 'LoginFilledScreen' component={LoginFilledPage}></Stack.Screen>
         <Stack.Screen name = 'CreateAccountScreen' component={CreateAccount}></Stack.Screen>
         <Stack.Screen name = 'AccountFilledScreen' component={AccountFilled}></Stack.Screen>
+        <Stack.Screen name = 'ProfileScreen' component={Profile}></Stack.Screen>
         <Stack.Screen name = 'ProfileSetScreen' component={ProfileSet}></Stack.Screen>
         <Stack.Screen name = 'FirstScreen' component={FirstScreenPage}></Stack.Screen>
         <Stack.Screen name = 'CreateHouseScreen' component={CreateHouse}></Stack.Screen>

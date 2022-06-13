@@ -3,7 +3,7 @@ import { View, Image, Text } from 'react-native';
 import styles from "./firstStyle";
 import { useNavigation } from '@react-navigation/native';
 
-export default function FirstPage() {
+export default function Login_OR_Signup() {
 
   const navigation = useNavigation();
   const login = () => {
@@ -16,14 +16,14 @@ export default function FirstPage() {
   return (
     <View style={styles.container}>
       <View style = {styles.logo}>
-      <Image source={require('../../assets/Group31.png')}></Image>
+      <Image source={require('../../assets/Group30.png')}></Image>
       </View>
       <View style = {styles.back}>
         <View style = {styles.Bton}>
-          <Text style = {styles.texting} onPress = {login}>LOG IN</Text>
+          <Text style = {styles.texting} onPress = {login}>Log In</Text>
         </View>
         <View style = {styles.Bton}>
-        <Text style = {styles.texting} onPress = {signUp}>SIGN UP</Text>
+        <Text style = {styles.texting} onPress = {signUp}>Sign Up</Text>
         </View>
       </View>
       <StatusBar style="auto" />
