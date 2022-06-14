@@ -1,6 +1,5 @@
 import { StyleSheet} from 'react-native';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
-import joinHouseStyle from '../Join_House/joinHouseStyle';
 
 export default StyleSheet.create({
   container: {
@@ -11,6 +10,7 @@ export default StyleSheet.create({
   logo:{
     position : 'absolute',
     marginTop : hp('10%'),
+    marginLeft : wp('10%')
   },
   back:{
     marginTop : hp('30%'),
