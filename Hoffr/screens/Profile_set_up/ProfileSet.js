@@ -15,7 +15,7 @@ export default function ProfileSet() {
       </View>
       <View style = {styles.back}>
         <Text>Display Picture</Text>
-        <Image source={require('../../assets/blank.jpg')} style = {styles.pic}></Image>
+        <Image source={require('../../assets/Dp.png')} style = {styles.pic}></Image>
         <Text>Display Name</Text>
         <TextInput style = {styles.name}></TextInput>
         <Text style= {styles.bton} onPress = {accountCreated}>Create Account</Text>

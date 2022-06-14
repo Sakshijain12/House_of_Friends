@@ -14,9 +14,9 @@ export default function JoinHouse() {
       <Image source={require('../../assets/Group30.png')}></Image>
       </View>
       <View style = {styles.back}>
-          <Text style = {styles.email}>Add joining code</Text>
+          <Text style = {styles.code}>Add joining code</Text>
           <TextInput style = {styles.box} placeholder = "Code"></TextInput>
-          <Text style = {styles.code} onPress = {join}>Join</Text>
+          <Text style = {styles.join} onPress = {join}>Join</Text>
           <Text style = {styles.or}>- or -</Text>
           <Text style = {styles.link}>Click the invite link sent to you</Text>
       </View>

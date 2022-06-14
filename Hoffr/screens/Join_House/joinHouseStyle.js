@@ -19,12 +19,13 @@ export default StyleSheet.create({
       textAlign : 'left'
   },
 
-  email : {
+  code : {
     marginLeft : wp('2%'),
-    fontSize : hp('2.5%'),
+    fontSize : 24,
     textAlign : 'center',
     marginBottom : hp('4%'),
-    fontWeight : 'bold'
+    fontWeight : '500',
+    color : '#656565'
   },
 
   box : {
@@ -36,7 +37,7 @@ export default StyleSheet.create({
       textAlign : 'center'
   },
 
-  code : {
+  join : {
       backgroundColor : '#75D1CB',
       fontSize:20,
       borderRadius:wp('15%'),
@@ -50,15 +51,16 @@ export default StyleSheet.create({
   or : {
     textAlign : 'center',
       fontSize:18,
-      marginTop:hp('-2%')
+      marginTop:hp('-2%'),
+      fontWeight : '400'
   },
 
   link:{
       textAlign : 'center',
-      fontSize:18,
-      marginTop:hp('0.6%'),
-      fontWeight : 'bold',
+      fontSize:24,
+      fontWeight : '500',
       marginTop : hp('4%'),
-      margin : wp('20%')
+      margin : wp('15%'),
+      color : '#656565'
   },
 });

@@ -1,6 +1,5 @@
 import { StyleSheet} from 'react-native';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
-import joinHouseStyle from '../Join_House/joinHouseStyle';
 
 export default StyleSheet.create({
   container: {
@@ -13,24 +12,23 @@ export default StyleSheet.create({
     marginTop : hp('10%'),
   },
   back:{
-    marginTop : hp('30%'),
+    marginTop : hp('25%'),
     alignItems : 'center',
   },
   pic : {
     height : hp('20%'),
     width :hp('20%'),
     marginTop : hp('2%'),
-    marginBottom : hp('5%'),
+    marginBottom : hp('4%'),
     borderRadius : hp('10%'),
-    backgroundColor : '#656565',
-    borderWidth : 2,
-    borderColor : 'black',
+    borderColor : '#656565',
+    borderWidth : 2
   },
   name : {
     borderWidth :2,
     borderStyle : 'solid',
     width : wp('80%'),
-    borderRadius : 12,
+    borderRadius : 15,
     height : hp('5%'),
     padding: wp('3%'),
     marginTop :hp('2%'),
@@ -38,15 +36,31 @@ export default StyleSheet.create({
     color : '#606060'
   },
   bton : {
-    marginTop : hp('10%'),
-    width : wp('70%'),
-    borderWidth : 2,
+    marginTop : hp('6%'),
+    borderRadius : 15,
     backgroundColor : '#75D1CB',
+    padding : hp('1%'),
+    width : wp('70%'),
     textAlign : 'center',
-    borderColor : '#fff',
-    padding : hp('0.4%'),
-    borderRadius :12,
-    fontSize :20,
+    fontWeight : '600',
+    fontSize : 20,
     color : '#fff'
+  },
+  box : {
+    borderRadius : 15,
+    borderStyle : 'solid',
+    borderWidth :2,
+    padding : 10,
+    marginTop : hp('2%'),
+    fontWeight : '500',
+    borderColor : '#75D1CB'
+  },
+  newChannel : {
+    marginTop : hp('1%'),
+    fontWeight : '500'
+  },
+  text : {
+    fontStyle : 'italic',
+    color : '#656565'
   },
 });

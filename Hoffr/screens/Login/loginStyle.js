@@ -20,7 +20,10 @@ export default StyleSheet.create({
   },
 
   email : {
-    marginLeft : wp('2%')
+    marginLeft : wp('2%'),
+    fontWeight : '500',
+    color : '#606060',
+    marginBottom : hp('1%')
   },
 
   box : {
@@ -29,6 +32,8 @@ export default StyleSheet.create({
       borderRadius : 12,
       fontSize:15,
       padding :hp("1%"),
+      color : '#606060',
+      borderColor : '#656565'
   },
 
   code : {
@@ -45,13 +50,15 @@ export default StyleSheet.create({
   option:{
     textAlign : 'center',
     fontSize:18,
-    marginTop:hp('2%')
+    marginTop:hp('2%'),
+    color : '#606060'
   },
 
   options:{
       textAlign : 'center',
       fontSize:18,
-      marginTop:hp('3%')
+      marginTop:hp('3%'),
+      color : '#606060',
   },
 
   google:{
@@ -72,25 +79,8 @@ export default StyleSheet.create({
     textAlign : 'center',
     fontSize:18,
     marginTop:hp('2%'),
-    marginLeft : wp('5%')
-  },
-
-  put : {
-    textAlign : 'right',
-    marginBottom :hp('5%')
-  },
-
-  login : {
-      backgroundColor : '#75D1CB',
-      fontSize :20,
-      borderRadius :12,
-      textAlign : 'center',
-      borderStyle : 'solid',
-      borderWidth:2,
-      borderColor : '#FDFBFB',
-      marginTop :hp('5%'),
-      color : '#fff',
-      padding :wp('2%'),
+    marginLeft : wp('5%'),
+    color : '#606060',
   },
 
 });
