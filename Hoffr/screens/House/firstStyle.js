@@ -10,36 +10,33 @@ export default StyleSheet.create({
   logo:{
     position : 'absolute',
     marginTop : hp('10%'),
-    marginLeft : wp('10%')
   },
   back:{
-    marginTop : hp('30%'),
+    marginTop : hp('15%'),
     alignItems : 'center',
+  },
+  question : {
+    color : '#606060',
+    fontWeight : '500',
+    fontSize : 20,
+    margin : wp('20%'),
+    marginBottom : wp('10%'),
+    textAlign : 'center'
+  },
+  set : {
+    alignItems : 'center'
   },
   pic : {
     height : hp('20%'),
     width :hp('20%'),
-    backgroundColor : '#656565',
     marginTop : hp('2%'),
-    marginBottom : hp('4%'),
     borderRadius : hp('10%'),
-    textAlign : 'center',
-    textAlignVertical : 'center',
-    color : '#fff'
+    borderWidth : 2,
   },
-  name : {
-    borderWidth :2,
-    borderStyle : 'solid',
-    width : wp('80%'),
-    borderRadius : 15,
-    height : hp('5%'),
-    padding: wp('3%'),
-    marginTop :hp('2%'),
-    borderColor : '#656565',
-    color : '#606060'
-  },
-  bton : {
-    marginTop : hp('4%'),
-    height : 90
+  text : {
+    bottom : hp('12%'),
+    color : '#fff',
+    fontWeight : '600',
+    fontSize : 24
   },
 });

@@ -14,10 +14,21 @@ import SendLink from './screens/Join_House/Home';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+import FirstScreen from './screens/House/First_screen';
+import HouseHome from './screens/House/Home/Home';
+
 const  Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
+    <NavigationContainer>
+      <Stack.Navigator screenOptions={{headerShown : false}}>
+        <Stack.Screen name = 'FirstHouseScreen' component={FirstScreen}></Stack.Screen>
+        <Stack.Screen name='HouseHomeScreen' component={HouseHome}></Stack.Screen>
+      </Stack.Navigator>
+    </NavigationContainer>
+
+    /*
     <NavigationContainer>
       <Stack.Navigator screenOptions= {{headerShown : false}}>
         <Stack.Screen name = 'HomeScreen' component={Login_OR_Signup}></Stack.Screen>
@@ -34,5 +45,6 @@ export default function App() {
         <Stack.Screen name = 'SendLinkScreen' component={SendLink}></Stack.Screen>
       </Stack.Navigator>  
     </NavigationContainer>
+    */
   )
 }
