@@ -21,7 +21,7 @@ export default function CreateAccount() {
         <Image source={require('../../assets/Group30.png')}></Image>
       </View>
       <View style = {styles.back}>
-          <Text>Email</Text>
+          <Text style = {{color : '#606060'}}>E-mail</Text>
           <TextInput 
             style = {styles.box} 
             placeholder = "Email"
@@ -30,7 +30,7 @@ export default function CreateAccount() {
             onChangeText = {(text) => setEmail(text)}>
           </TextInput>
           
-          <Text>Mobile Number</Text>
+          <Text style = {{color:'#606060'}}>Mobile Number</Text>
           <TextInput 
             style = {styles.box} 
             placeholder = "Mobile Number"

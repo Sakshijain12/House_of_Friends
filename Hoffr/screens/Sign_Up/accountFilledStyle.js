@@ -19,7 +19,7 @@ export default StyleSheet.create({
       margin : wp('10%'),
   },
 
-  box : {
+  box1 : {
       borderStyle : 'solid',
       borderWidth : 2,
       borderRadius : 12,
@@ -27,9 +27,19 @@ export default StyleSheet.create({
       padding :wp('2.5%'),
       marginTop : hp('1%'),
       color : '#606060',
-      borderColor : '#656565',
-      marginBottom : hp('5%')
+      borderColor : '#DEDEDE'
   },
+
+  box2 : {
+    borderStyle : 'solid',
+    borderWidth : 2,
+    borderRadius : 12,
+    fontSize:15,
+    padding :wp('2.5%'),
+    marginTop : hp('1%'),
+    color : '#606060',
+    borderColor : '#656565'
+},
 
   login : {
       borderRadius : 12,
@@ -81,6 +91,12 @@ options2:{
   fontSize:18,
   marginTop:hp('2%'),
   marginLeft : wp('5%'),
+  color : '#606060'
+},
+
+put : {
+  textAlign : 'right',
+  marginBottom :hp('5%'),
   color : '#606060'
 },
 

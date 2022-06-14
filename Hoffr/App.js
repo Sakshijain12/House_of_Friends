@@ -5,11 +5,11 @@ import CreateAccount from "./screens/Sign_Up/CreateAccount";
 import AccountFilled from "./screens/Sign_Up/AccountFilled";
 import Profile from './screens/Profile_set_up/Profile';
 import ProfileSet from './screens/Profile_set_up/ProfileSet'
-import FirstScreenPage from './screens/First_Screen/FirstScreen';
+import HomeScreenPage from './screens/Home_Screen/Home';
 import CreateHouse from './screens/Create_House/CreateHouse';
 import JoinHouse from './screens/Join_House/JoinHouse';
-import CreateHouseFilled from './screens/Create_House/CreateHouseFilled';
-import SendLink from './screens/Join_House/SendLink';
+import CustomiseHouse from './screens/Create_House/CustomiseHouse';
+import SendLink from './screens/Join_House/Home';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -27,10 +27,10 @@ export default function App() {
         <Stack.Screen name = 'AccountFilledScreen' component={AccountFilled}></Stack.Screen>
         <Stack.Screen name = 'ProfileScreen' component={Profile}></Stack.Screen>
         <Stack.Screen name = 'ProfileSetScreen' component={ProfileSet}></Stack.Screen>
-        <Stack.Screen name = 'FirstScreen' component={FirstScreenPage}></Stack.Screen>
+        <Stack.Screen name = 'FirstScreen' component={HomeScreenPage}></Stack.Screen>
         <Stack.Screen name = 'CreateHouseScreen' component={CreateHouse}></Stack.Screen>
         <Stack.Screen name = 'JoinHouseScreen' component={JoinHouse}></Stack.Screen>
-        <Stack.Screen name = 'CreateHouseFilledScreen' component={CreateHouseFilled}></Stack.Screen>
+        <Stack.Screen name = 'CustomiseHouseScreen' component={CustomiseHouse}></Stack.Screen>
         <Stack.Screen name = 'SendLinkScreen' component={SendLink}></Stack.Screen>
       </Stack.Navigator>  
     </NavigationContainer>
