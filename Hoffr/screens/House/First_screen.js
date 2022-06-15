@@ -3,10 +3,10 @@ import { StatusBar } from 'expo-status-bar';
 import { View, Image, Text} from 'react-native';
 import styles from "./firstStyle";
 
-export default function FirstScreen() {
+export default function Houses() {
   const navigation = useNavigation();
   const house = () => {
-    navigation.navigate('HouseHomeScreen')
+    navigation.navigate('TabScreen')
   }
   return (
     <View style={styles.container}>

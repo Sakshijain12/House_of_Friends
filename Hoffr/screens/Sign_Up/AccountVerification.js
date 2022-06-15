@@ -1,9 +1,9 @@
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
 import { View, Text, TextInput, Image, SafeAreaView, ScrollView} from 'react-native';
-import styles from "./accountFilledStyle";
+import styles from "./accountVerifyStyle";
 
-export default function AccountFilled() {
+export default function AccountVerification() {
   const route = useRoute();
   const navigation = useNavigation();
   const profile = () => {

@@ -1,6 +1,6 @@
 import { useNavigation } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
-import { View, Image, Text, TextInput } from 'react-native';
+import { View, Image, Text } from 'react-native';
 import styles from "./homeStyle";
 
 export default function HomeScreenPage() {
@@ -9,7 +9,7 @@ export default function HomeScreenPage() {
     navigation.navigate('CreateHouseScreen')
   }
   const joinHouse = () => {
-    navigation.navigate('JoinHouseScreen')
+    navigation.navigate('JoiningCodeScreen')
   }
   return (
     <View style={styles.container}>

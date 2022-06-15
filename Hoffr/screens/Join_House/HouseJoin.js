@@ -1,9 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { View, Image, Text} from 'react-native';
-import styles from "./homeStyle";
+import styles from "./HouseJoinStyle";
 import Icon from 'react-native-vector-icons/FontAwesome';
+import { useNavigation } from '@react-navigation/native';
 
-export default function SendLink() {
+export default function HouseJoined() {
+  const navigation = useNavigation();
+  const house = () => {
+    navigation.navigate('TabScreen')
+  }
   const myIcon = <Icon name='gear' size={25}/>;
   return (
     <View style={styles.container}>
@@ -29,7 +34,7 @@ export default function SendLink() {
           <Image source={require("../../assets/Member.png")} style = {styles.profile}></Image>
           <Text style = {styles.text}> Member 3</Text>
         </View>
-        <Text style= {styles.bton}>Join the Conversation</Text>
+        <Text style= {styles.bton} onPress = {house}>Join the Conversation</Text>
       </View>
       <StatusBar style="auto" />
     </View>

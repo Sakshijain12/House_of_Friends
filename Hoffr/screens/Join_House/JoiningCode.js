@@ -1,12 +1,12 @@
 import { useNavigation } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
 import { View, Text, TextInput, Image} from 'react-native';
-import styles from "./joinHouseStyle";
+import styles from "./joinCodeStyle";
 
-export default function JoinHouse() {
+export default function JoiningCode() {
   const navigation = useNavigation();
   const join = () => {
-    navigation.navigate('SendLinkScreen')
+    navigation.navigate('HouseJoinedScreen')
   }
   return (
     <View style={styles.container}>
