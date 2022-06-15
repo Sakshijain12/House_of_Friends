@@ -3,11 +3,11 @@ import { StatusBar } from 'expo-status-bar';
 import { View, Text, TextInput, Image, SafeAreaView, ScrollView} from 'react-native';
 import styles from "./loginVerificationStyle";
 
-export default function LoginFilledPage() {
+export default function LoginVerificationPage() {
   const route = useRoute();
   const navigation = useNavigation();
   const login = () => {
-    navigation.navigate('FirstScreen')
+    navigation.navigate('HousesScreen')
   }
   const reEnter = () => {
     navigation.navigate('LoginScreen')

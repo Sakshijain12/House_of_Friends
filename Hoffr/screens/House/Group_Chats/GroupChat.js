@@ -1,11 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { View, Text} from 'react-native';
-import styles from "./profileStyle";
+import styles from "./groupStyle";
 
-export default function Profile() {
+export default function GroupChats() {
   return (
     <View style={styles.container}>
-      <Text>Profile Screen</Text>
+      <Text>Group Chat Screen</Text>
       <StatusBar style="auto" />
     </View>
   );

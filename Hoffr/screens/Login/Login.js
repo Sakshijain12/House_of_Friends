@@ -9,7 +9,7 @@ export default function LoginPage() {
 
   const navigation = useNavigation();
   const loginFilled = () => {
-    navigation.navigate('LoginFilledScreen',{
+    navigation.navigate('LoginVerificationScreen',{
       email : email,
     })
   }

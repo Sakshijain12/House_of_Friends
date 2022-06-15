@@ -10,7 +10,7 @@ export default function CreateAccount() {
 
   const navigation = useNavigation();
   const sign = () => {
-    navigation.navigate('AccountFilledScreen',{
+    navigation.navigate('AccountVerificationScreen',{
       email : email,
       mobile : mobile,
     })

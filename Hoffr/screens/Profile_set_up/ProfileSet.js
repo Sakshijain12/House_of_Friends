@@ -6,7 +6,7 @@ import styles from "./profileStyle";
 export default function ProfileSet() {
   const navigation = useNavigation();
   const accountCreated = () => {
-    navigation.navigate('FirstScreen')
+    navigation.navigate('HomeScreen')
   }
   return (
     <SafeAreaView style={styles.container}>
