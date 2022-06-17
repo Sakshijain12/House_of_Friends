@@ -1,11 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { View, Text} from 'react-native';
-import styles from "./chatStyle";
+import styles from "./uploadStyle";
 
-export default function Chats() {
+export default function Upload() {
   return (
     <View style={styles.container}>
-      <Text>individual Chat Screen</Text>
+      <Text>Upload Screen</Text>
       <StatusBar style="auto" />
     </View>
   );

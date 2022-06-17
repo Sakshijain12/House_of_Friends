@@ -1,3 +1,7 @@
+import Intro1 from './screens/Intro/Intro1';
+import Intro2 from './screens/Intro/Intro2';
+import Intro3 from './screens/Intro/Intro3';
+
 import Login_OR_Signup from './screens/Login_signup Screen/First';
 import LoginPage from './screens/Login/Login';
 import LoginVerificationPage from './screens/Login/LoginVerification';
@@ -26,6 +30,10 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions= {{headerShown : false}}>
+      <Stack.Screen name = 'Intro1Screen' component={Intro1}></Stack.Screen>
+      <Stack.Screen name = 'Intro2Screen' component={Intro2}></Stack.Screen>
+      <Stack.Screen name = 'Intro3Screen' component={Intro3}></Stack.Screen>
+      
         <Stack.Screen name = 'LoginSignUpScreen' component={Login_OR_Signup}></Stack.Screen>
         <Stack.Screen name = 'LoginScreen' component={LoginPage}></Stack.Screen>
         <Stack.Screen name = 'LoginVerificationScreen' component={LoginVerificationPage}></Stack.Screen>
