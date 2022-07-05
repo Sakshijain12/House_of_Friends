@@ -4,12 +4,16 @@ import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-nativ
 export default StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'center',
+  },
+  bgimg : {
+    width : wp('100%'),
+    height : hp("120%")
   },
   logo:{
     position : 'absolute',
     marginTop : hp('10%'),
+    alignSelf : 'center'
   },
   back:{
     marginTop : hp('30%'),

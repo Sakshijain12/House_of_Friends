@@ -23,6 +23,10 @@ export default StyleSheet.create({
     marginLeft : wp('-25%'),
     position : 'absolute',
   },
+  img : {
+    height : hp("100%"),
+    width : wp("100%"),
+  },
   logo:{
     marginTop : hp('5%'),
     height : hp('6%'),
@@ -42,12 +46,12 @@ export default StyleSheet.create({
   },
   welcome : {
     marginTop : hp('5%'),
-    fontWeight : '500',
+    fontWeight : '700',
     fontSize : 24
   },
   house : {
     marginTop : hp('4%'),
-    fontWeight : '500',
+    fontWeight : '700',
     fontSize : 20,
     color : '#363636'
   },
@@ -81,7 +85,8 @@ export default StyleSheet.create({
     padding : hp('0.4%'),
     borderRadius :15,
     fontSize :20,
-    color : '#fff'
+    color : '#fff',
+    fontWeight : '700'
   },
   box : {
     borderRadius : 15,
@@ -107,6 +112,6 @@ export default StyleSheet.create({
     marginTop : hp('0.5%'),
     marginLeft : wp("6%"),
     fontSize : 20,
-    color : '#656565'
+    color : '#656565',
   },
 });

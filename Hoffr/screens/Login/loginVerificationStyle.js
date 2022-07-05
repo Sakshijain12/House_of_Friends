@@ -6,7 +6,11 @@ export default StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
   },
-
+  img : {
+    height : hp("120%"),
+    width : wp("100%"),
+    top : 30,
+  },
   logo:{
     marginTop : hp('14%'),
     alignItems: 'center',
@@ -33,7 +37,8 @@ export default StyleSheet.create({
       fontSize:15,
       padding :hp("1%"),
       color : '#606060',
-      borderColor : '#DEDEDE'
+      borderColor : '#DEDEDE',
+      backgroundColor : "#fff"
   },
 
   box2 : {
@@ -43,7 +48,8 @@ export default StyleSheet.create({
     fontSize:15,
     padding :hp("1%"),
     color : '#606060',
-    borderColor : '#656565'
+    borderColor : '#656565',
+    backgroundColor : "#fff"
 },
 
   put : {
@@ -63,6 +69,7 @@ export default StyleSheet.create({
       marginTop :hp('5%'),
       color : '#fff',
       padding :wp('2%'),
+      fontWeight : "700"
   },
 
 });

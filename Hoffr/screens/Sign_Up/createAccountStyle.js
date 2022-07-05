@@ -7,6 +7,12 @@ export default StyleSheet.create({
     backgroundColor: '#fff',
   },
 
+  img : {
+    height : hp("120%"),
+    width : wp("100%"),
+    top : 30,
+  },
+
   logo:{
     marginTop : hp('10%'),
     alignItems: 'center',
@@ -28,7 +34,8 @@ export default StyleSheet.create({
       marginTop : hp('1%'),
       color : '#606060',
       borderColor : '#656565',
-      marginBottom : hp('5%')
+      marginBottom : hp('5%'),
+      backgroundColor : "#fff"
   },
 
   login : {
@@ -41,7 +48,8 @@ export default StyleSheet.create({
       backgroundColor :'#75D1CB',
       color : '#fff',
       fontSize :20,
-      padding :wp('1.5%')
+      padding :wp('1.5%'),
+      fontWeight : "700"
   },
 
   options:{

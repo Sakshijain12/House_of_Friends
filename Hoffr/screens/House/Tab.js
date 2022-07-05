@@ -8,38 +8,53 @@ import Profile from './Profile/Profile';
 
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
-const  Tab = createBottomTabNavigator();
+const Tab = createBottomTabNavigator();
 
 export default function TabPlace() {
-    return (
-      <NavigationContainer independent = {true}>
-        <Tab.Navigator tabBarOptions={{ showLabel: false }} screenOptions={({ route }) => ({
-          headerShown : false,
-          tabBarIcon: ({ color}) => {
-            let iconName;
-            if (route.name === 'HouseHomeScreen') {
-              iconName = 'people';
-            } else if (route.name === 'GroupChatScreen') {
-              iconName = 'chatbubbles';
-            } else if (route.name === 'LiveScreen'){
-              iconName = 'videocam';
-            } else if (route.name === 'UploadScreen') {
-              iconName = 'cloud-upload';
-            }
-            else if(route.name === 'ProfileScreen'){
-              iconName = 'person';
-            }
-            return <Ionicons name={iconName} size={30} color={color} />;
+  return (
+    <NavigationContainer independent={true}>
+      <Tab.Navigator tabBarOptions={{ showLabel: false }} screenOptions={({ route }) => ({
+        headerShown: false,
+        tabBarStyle: {
+          height: 50,
+          position: 'absolute',
+          borderTopLeftRadius: 30,
+          borderTopRightRadius: 30,
+          backgroundColor: '#fff',
+          shadowOffset: {
+            width: 1,
+            height: 50,
           },
-          tabBarActiveTintColor: '#75D1CB',
-          tabBarInactiveTintColor: '#606060',
-        })}>
-            <Tab.Screen name = "HouseHomeScreen" component={HouseHome} options = {{tabBarBadge : 3}}></Tab.Screen>
-            <Tab.Screen name = "GroupChatScreen" component={GroupChats} options = {{tabBarBadge : 4}}></Tab.Screen>
-            <Tab.Screen name = "LiveScreen" component={Live}></Tab.Screen>
-            <Tab.Screen name = "UploadScreen" component={Upload}></Tab.Screen>
-            <Tab.Screen name = "ProfileScreen" component={Profile}></Tab.Screen>
-        </Tab.Navigator>
-      </NavigationContainer>
-    )
-  }
+          shadowOpacity: 0.6,
+          shadowRadius: 24.0,
+          shadowColor : 'gray',
+          elevation: 24,
+        },
+        tabBarIcon: ({ color }) => {
+          let iconName;
+          if (route.name === 'HouseHomeScreen') {
+            iconName = 'people';
+          } else if (route.name === 'GroupChatScreen') {
+            iconName = 'chatbubbles';
+          } else if (route.name === 'LiveScreen') {
+            iconName = 'videocam';
+          } else if (route.name === 'UploadScreen') {
+            iconName = 'cloud-upload';
+          }
+          else if (route.name === 'ProfileScreen') {
+            iconName = 'person';
+          }
+          return <Ionicons name={iconName} size={30} color={color} />;
+        },
+        tabBarActiveTintColor: '#75D1CB',
+        tabBarInactiveTintColor: '#606060',
+      })}>
+        <Tab.Screen name="HouseHomeScreen" component={HouseHome} options={{ tabBarBadge: 3 }}></Tab.Screen>
+        <Tab.Screen name="GroupChatScreen" component={GroupChats} options={{ tabBarBadge: 4 }}></Tab.Screen>
+        <Tab.Screen name="LiveScreen" component={Live}></Tab.Screen>
+        <Tab.Screen name="UploadScreen" component={Upload}></Tab.Screen>
+        <Tab.Screen name="ProfileScreen" component={Profile}></Tab.Screen>
+      </Tab.Navigator>
+    </NavigationContainer>
+  )
+}

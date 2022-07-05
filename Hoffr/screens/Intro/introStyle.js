@@ -7,9 +7,15 @@ export default StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
   },
+  img : {
+    height : hp("120%"),
+    width : wp("100%"),
+    top : 30,
+  },
   logo : {
     position : 'absolute',
     marginTop : hp('17%'),
+    alignSelf : 'center'
   },
   back : {
     marginTop : hp("35%"),
@@ -20,14 +26,17 @@ export default StyleSheet.create({
     textAlign : 'center',
     fontWeight : '500',
     height : hp("45%"),
-    borderRadius : hp('10%')
+    borderRadius : hp('10%'),
+    backgroundColor : "#fff"
   },
   text : {
     textAlign : 'center',
     fontSize : 18,
-    marginLeft : wp('15%'),
-    marginRight : wp('15%'),
-    marginTop : 10
+    marginLeft : wp('10%'),
+    marginRight : wp('10%'),
+    marginTop : 15,
+    fontWeight : '600',
+    color : '#656565',
   },
   pic : {
     marginTop : 40
@@ -40,7 +49,7 @@ export default StyleSheet.create({
     color : '#fff',
     textAlign : 'center',
     fontSize : 20,
-    fontWeight : '600',
+    fontWeight : '700',
     borderRadius : 15
   }
 });
