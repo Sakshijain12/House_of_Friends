@@ -7,6 +7,12 @@ export default StyleSheet.create({
     backgroundColor: '#fff',
   },
 
+  img : {
+    height : hp("120%"),
+    width : wp("100%"),
+    top : 30,
+  },
+
   logo:{
     marginTop : hp('10%'),
     alignItems: 'center',
@@ -24,8 +30,8 @@ export default StyleSheet.create({
     fontSize : 24,
     textAlign : 'center',
     marginBottom : hp('4%'),
-    fontWeight : '500',
-    color : '#656565'
+    fontWeight : '600',
+    color : '#656565',
   },
 
   box : {
@@ -34,7 +40,8 @@ export default StyleSheet.create({
       borderRadius : hp('3%'),
       fontSize:18,
       padding :hp("1%"),
-      textAlign : 'center'
+      textAlign : 'center',
+      backgroundColor : "#fff"
   },
 
   join : {
@@ -46,13 +53,15 @@ export default StyleSheet.create({
       color : '#fff',
       margin :wp('15%'),
       padding:hp('0.7%'),
+      fontWeight : '700'
   },
 
   or : {
     textAlign : 'center',
       fontSize:18,
       marginTop:hp('-2%'),
-      fontWeight : '400'
+      fontWeight : '400',
+      color : '#656565'
   },
 
   link:{
@@ -60,7 +69,7 @@ export default StyleSheet.create({
       fontSize:24,
       fontWeight : '500',
       marginTop : hp('4%'),
-      margin : wp('15%'),
+      margin : wp('10%'),
       color : '#656565'
   },
 });

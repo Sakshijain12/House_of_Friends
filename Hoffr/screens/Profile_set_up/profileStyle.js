@@ -7,10 +7,15 @@ export default StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
   },
+  img : {
+    height : hp("120%"),
+    width : wp("100%"),
+    top : 30,
+  },
   logo:{
     position : 'absolute',
     marginTop : hp('10%'),
-    marginLeft : wp('10%')
+    alignSelf : 'center'
   },
   back:{
     marginTop : hp('30%'),
@@ -35,7 +40,8 @@ export default StyleSheet.create({
     padding: wp('3%'),
     marginTop :hp('2%'),
     borderColor : '#656565',
-    color : '#606060'
+    color : '#606060',
+    backgroundColor : "#fff"
   },
   bton : {
     marginTop : hp('10%'),
@@ -47,6 +53,7 @@ export default StyleSheet.create({
     padding : hp('0.4%'),
     borderRadius :12,
     fontSize :20,
-    color : '#fff'
+    color : '#fff',
+    fontWeight : "700"
   },
 });

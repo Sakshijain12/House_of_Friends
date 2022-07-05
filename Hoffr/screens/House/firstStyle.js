@@ -7,24 +7,30 @@ export default StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
   },
+  img : {
+    height : hp("120%"),
+    width : wp("100%"),
+    top : 30,
+  },
   logo:{
-    position : 'absolute',
     marginTop : hp('10%'),
+    alignItems : "center"
   },
   back:{
-    marginTop : hp('15%'),
+    marginTop : hp('-3%'),
     alignItems : 'center',
   },
   question : {
     color : '#606060',
-    fontWeight : '500',
+    fontWeight : '700',
     fontSize : 20,
-    margin : wp('20%'),
+    margin : wp('15%'),
     marginBottom : wp('10%'),
-    textAlign : 'center'
+    textAlign : 'center',
   },
   set : {
-    alignItems : 'center'
+    alignItems : 'center',
+    
   },
   pic : {
     height : hp('20%'),
@@ -36,7 +42,46 @@ export default StyleSheet.create({
   text : {
     bottom : hp('12%'),
     color : '#fff',
-    fontWeight : '600',
+    fontWeight : '700',
     fontSize : 24
   },
+  plus : {
+    padding : 10,
+    backgroundColor : "#75D1CB",
+    marginTop : hp('2%'),
+    borderRadius : hp("4%"),
+    height : hp('8%'),
+    width : hp('8%'),
+    textAlign : 'center',
+    left : wp('70%')
+  },
+  add : {
+    flexDirection : 'row',
+    marginTop : hp("4%"),
+  },
+  new1 : {
+    borderStyle : "solid",
+    borderColor : "#75D1CB",
+    borderRadius : 15,
+    backgroundColor : "#fff",
+    borderWidth : 2,
+    padding : wp("2%"),
+    marginRight : wp("5%"),
+    fontSize : 20,
+    fontWeight : '700',
+    color : "#656565"
+  },
+  new2 : {
+    borderStyle : "solid",
+    borderColor : "#75D1CB",
+    borderRadius : 15,
+    backgroundColor : "#fff",
+    borderWidth : 2,
+    padding : wp("2%"),
+    marginLeft : wp("3%"),
+    fontSize : 20,
+    fontWeight : '700',
+    color : "#656565"
+  },
+
 });

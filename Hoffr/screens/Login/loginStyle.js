@@ -6,7 +6,11 @@ export default StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
   },
-
+  img : {
+    height : hp("120%"),
+    width : wp("100%"),
+    top : 30,
+  },
   logo:{
     marginTop : hp('14%'),
     alignItems: 'center',
@@ -23,7 +27,8 @@ export default StyleSheet.create({
     marginLeft : wp('2%'),
     fontWeight : '500',
     color : '#606060',
-    marginBottom : hp('1%')
+    marginBottom : hp('1%'),
+    backgroundColor : '#fff'
   },
 
   box : {
@@ -33,7 +38,8 @@ export default StyleSheet.create({
       fontSize:15,
       padding :hp("1%"),
       color : '#606060',
-      borderColor : '#656565'
+      borderColor : '#656565',
+      backgroundColor : "#fff"
   },
 
   code : {
@@ -45,6 +51,7 @@ export default StyleSheet.create({
       color : '#fff',
       margin :hp('1%'),
       padding:hp('0.7%'),
+      fontWeight : "700"
   },
 
   option:{

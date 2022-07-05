@@ -7,6 +7,12 @@ export default StyleSheet.create({
     backgroundColor: '#fff',
   },
 
+  img : {
+    height : hp("100%"),
+    width : wp("100%"),
+    top : 30,
+  },
+
   logo:{
     marginTop : hp('10%'),
     alignItems: 'center',
@@ -27,7 +33,8 @@ export default StyleSheet.create({
       padding :wp('2.5%'),
       marginTop : hp('1%'),
       color : '#606060',
-      borderColor : '#DEDEDE'
+      borderColor : '#DEDEDE',
+      backgroundColor : '#fff'
   },
 
   box2 : {
@@ -38,7 +45,8 @@ export default StyleSheet.create({
     padding :wp('2.5%'),
     marginTop : hp('1%'),
     color : '#606060',
-    borderColor : '#656565'
+    borderColor : '#656565',
+    backgroundColor : "#fff"
 },
 
   login : {
@@ -51,7 +59,8 @@ export default StyleSheet.create({
       backgroundColor :'#75D1CB',
       color : '#fff',
       fontSize :20,
-      padding :wp('1.5%')
+      padding :wp('1.5%'),
+      fontWeight : "700"
   },
 
   options:{

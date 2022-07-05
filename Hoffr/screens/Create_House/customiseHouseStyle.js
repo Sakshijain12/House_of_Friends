@@ -7,9 +7,15 @@ export default StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
   },
+  img : {
+    height : hp("120%"),
+    width : wp("100%"),
+    top : 30,
+  },
   logo:{
     position : 'absolute',
     marginTop : hp('10%'),
+    alignSelf : 'center'
   },
   back:{
     marginTop : hp('25%'),
@@ -42,7 +48,7 @@ export default StyleSheet.create({
     padding : hp('1%'),
     width : wp('70%'),
     textAlign : 'center',
-    fontWeight : '600',
+    fontWeight : '700',
     fontSize : 20,
     color : '#fff'
   },
@@ -53,7 +59,8 @@ export default StyleSheet.create({
     padding : 10,
     marginTop : hp('2%'),
     fontWeight : '500',
-    borderColor : '#75D1CB'
+    borderColor : '#75D1CB',
+    backgroundColor : "#fff"
   },
   newChannel : {
     marginTop : hp('1%'),

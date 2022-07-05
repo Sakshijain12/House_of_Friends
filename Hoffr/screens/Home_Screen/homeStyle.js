@@ -7,9 +7,15 @@ export default StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
   },
+  img : {
+    height : hp("120%"),
+    width : wp("100%"),
+    top : 30,
+  },
   logo:{
     position : 'absolute',
     marginTop : hp('10%'),
+    alignSelf : "center"
   },
   back:{
     marginTop : hp('25%'),
@@ -29,7 +35,8 @@ export default StyleSheet.create({
     textAlign : 'center',
     color : '#444444',
     justifyContent : 'center',
-    paddingVertical :hp('2%')
+    paddingVertical :hp('2%'),
+    fontWeight : "700"
   },
   option2 : {
     fontSize :hp('3.5%'),
@@ -40,7 +47,8 @@ export default StyleSheet.create({
     textAlign : 'center',
     color : '#444444',
     justifyContent : 'center',
-    paddingVertical :hp('4.5%')
+    paddingVertical :hp('4.5%'),
+    fontWeight : '700'
   },
   img1 : {
     margin : wp('15%'),
