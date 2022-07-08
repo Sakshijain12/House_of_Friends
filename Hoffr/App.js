@@ -18,6 +18,7 @@ import HomeScreenPage from './screens/Home_Screen/Home';
 
 import CreateHouse from './screens/Create_House/CreateHouse';
 import CustomiseHouse from './screens/Create_House/CustomiseHouse';
+import Share from "./screens/Create_House/Share"
 import JoiningCode from './screens/Join_House/JoiningCode';
 import HouseJoined from './screens/Join_House/HouseJoin';
 
@@ -47,6 +48,7 @@ export default function App() {
 
         <Stack.Screen name = 'CreateHouseScreen' component={CreateHouse}></Stack.Screen>
         <Stack.Screen name = 'CustomiseHouseScreen' component={CustomiseHouse}></Stack.Screen>
+        <Stack.Screen name = 'ShareScreen' component={Share}></Stack.Screen>
         <Stack.Screen name = 'JoiningCodeScreen' component={JoiningCode}></Stack.Screen>
         <Stack.Screen name = 'HouseJoinedScreen' component={HouseJoined}></Stack.Screen>
         

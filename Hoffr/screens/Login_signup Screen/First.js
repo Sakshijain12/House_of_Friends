@@ -8,14 +8,6 @@ const image = require("../../assets/bg1.png");
 
 export default function Login_OR_Signup() {
 
-  let [fontsLoaded] = useFonts({
-    'Montserrat': require('../../assets/fonts/Montserrat-Regular.ttf'),
-  });
-
-  if (!fontsLoaded) {
-    return null;
-  }
-
   const navigation = useNavigation();
   const login = () => {
     navigation.navigate('LoginScreen')
@@ -24,6 +16,14 @@ export default function Login_OR_Signup() {
     navigation.navigate('CreateAccountScreen')
   }
 
+  let [fontsLoaded] = useFonts({
+    'Montserrat': require('../../assets/fonts/Montserrat-Regular.ttf'),
+  });
+
+  if (!fontsLoaded) {
+    return null;
+  }
+  
   return (
     <View style={styles.container}>
       <ImageBackground source={image} style={styles.img} imageStyle={{ opacity: 0.1 }}>

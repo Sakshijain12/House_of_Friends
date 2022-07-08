@@ -1,14 +1,11 @@
-import { useNavigation, useRoute } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
-import { View, Image, Text, SafeAreaView, ScrollView, ImageBackground } from 'react-native';
+import { View, Image, Text, ImageBackground } from 'react-native';
 import styles from "./profileStyle";
-import Icon from 'react-native-vector-icons/FontAwesome';
 
 import { useFonts } from 'expo-font';
 const image = require("../../../assets/bg1.png");
 
 export default function ProfileSet() {
-  const myIcon = <Icon name='gear' size={25} />;
   let [fontsLoaded] = useFonts({
     'Montserrat': require('../../../assets/fonts/Montserrat-Regular.ttf'),
   });

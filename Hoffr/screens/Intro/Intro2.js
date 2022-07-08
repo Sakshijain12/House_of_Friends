@@ -8,6 +8,11 @@ const image = require("../../assets/bg1.png");
 
 export default function Intro2() {
 
+  const navigation = useNavigation();
+  const next = () => {
+    navigation.navigate("Intro3Screen")
+  }
+
   let [fontsLoaded] = useFonts({
     'Montserrat': require('../../assets/fonts/Montserrat-Regular.ttf'),
   });
@@ -15,11 +20,7 @@ export default function Intro2() {
   if (!fontsLoaded) {
     return null;
   }
-
-  const navigation = useNavigation();
-  const next = () => {
-    navigation.navigate("Intro3Screen")
-  }
+  
   return (
     <View style={styles.container}>
       <ImageBackground source={image} style={styles.img} imageStyle={{ opacity: 0.5 }}>

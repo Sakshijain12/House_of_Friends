@@ -8,7 +8,7 @@ export default StyleSheet.create({
   },
 
   img : {
-    height : hp("120%"),
+    height : hp("100%"),
     width : wp("100%"),
     top : 30,
   },
