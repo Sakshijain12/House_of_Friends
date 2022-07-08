@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Alert, Modal, Text, Pressable, View, ImageBackground, Image, TextInput } from "react-native";
+import {Modal, Text, Pressable, View, ImageBackground, Image, TextInput } from "react-native";
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { useNavigation, useRoute } from '@react-navigation/native';
 
@@ -30,7 +30,7 @@ export default function App() {
     const [name, setName] = useState('')
 
     const addChannel = () => {
-        if (tip == "") return
+        if (name == "") return
 
         Array.push({ key: (Array.length + 1).toString(), name })
         setName('')
@@ -76,7 +76,6 @@ export default function App() {
                     transparent={true}
                     visible={modalVisible}
                     onRequestClose={() => {
-                        Alert.alert("Modal has been closed.");
                         setModalVisible(!modalVisible);
                     }}
                 >
@@ -112,7 +111,6 @@ export default function App() {
                     transparent={true}
                     visible={chat}
                     onRequestClose={() => {
-                        Alert.alert("Modal has been closed.");
                         setChat(!chat);
                     }}
                 >
@@ -135,7 +133,6 @@ export default function App() {
                     transparent={true}
                     visible={live}
                     onRequestClose={() => {
-                        Alert.alert("Modal has been closed.");
                         setLive(!live);
                     }}
                 >

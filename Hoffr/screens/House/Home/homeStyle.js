@@ -20,19 +20,20 @@ export default StyleSheet.create({
     backgroundColor : '#F9C460',
     borderRadius : hp('2.5%'),
     marginTop : hp('5%'),
-    marginLeft : wp('-30%'),
+    marginLeft : wp('3%'),
     position : 'absolute',
   },
   logo:{
+    //position : "absolute",
     marginTop : hp('5%'),
     height : hp('6%'),
     width : wp('35%'),
-    alignItems : "center"
+    marginLeft : wp("32%")
   },
   icon : {
     position : 'absolute',
     top : hp('13%'),
-    right : wp('-28%'),
+    right : wp('3%'),
     color : '#667080'
   },
   back:{

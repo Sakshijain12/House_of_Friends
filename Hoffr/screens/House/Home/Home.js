@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { View, Image, Text, SafeAreaView, ScrollView, FlatList } from 'react-native';
+import { View, Image, Text, SafeAreaView, ScrollView, FlatList, ImageBackground } from 'react-native';
 import styles from "./homeStyle";
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -27,6 +27,8 @@ const DATA = [
     status: "Last active 2 hr. ago"
   },
 ];
+
+const image = require("../../../assets/bg1.png");
 
 const Item = ({ pic, name, active, status }) => (
   <View style={styles.item}>
@@ -57,6 +59,7 @@ export default function HouseHome() {
           <Image source={require("../../../assets/GrpDP.png")} style={styles.groupPic}></Image>
           <Image source={require('../../../assets/Group30.png')} style={styles.logo}></Image>
         </View>
+        <ImageBackground source={image} style={styles.img} imageStyle={{ opacity: 0.1 }}>
         <View style={styles.back}>
           <Text style={styles.welcome}>Goa Gang</Text>
 
@@ -82,6 +85,7 @@ export default function HouseHome() {
             <Text> {arrow} </Text>
           </View>
         </View>
+        </ImageBackground>
       </ScrollView>
       <StatusBar style="auto" />
     </SafeAreaView>
