@@ -20,13 +20,14 @@ export default StyleSheet.create({
     backgroundColor : '#F9C460',
     borderRadius : hp('2.5%'),
     marginTop : hp('5%'),
-    marginLeft : wp('-25%'),
+    marginLeft : wp('-30%'),
     position : 'absolute',
   },
   logo:{
     marginTop : hp('5%'),
     height : hp('6%'),
     width : wp('35%'),
+    alignItems : "center"
   },
   icon : {
     position : 'absolute',
@@ -45,17 +46,48 @@ export default StyleSheet.create({
     fontSize : 20,
     color : '#363636'
   },
-  bton : {
-    marginTop : hp('10%'),
-    width : wp('70%'),
+  dp : {
+    borderRadius : hp("9%"),
+    height : hp("18%"),
+    width : hp("18%"),
+    margin : hp("1%"),
+    borderColor : "green",
+    borderWidth : 2
+  },
+  name : {
+    alignSelf : 'center'
+  },
+  bton1 : {
+    marginTop : hp('1%'),
+    width : wp('90%'),
     borderWidth : 2,
     backgroundColor : '#75D1CB',
-    textAlign : 'center',
     borderColor : '#fff',
-    padding : hp('0.4%'),
+    paddingLeft : hp('4%'),
+    padding : hp("0.4%"),
     borderRadius :15,
-    fontSize :20,
-    color : '#fff',
-    fontWeight : '600'
+    justifyContent : "space-between",
+    flexDirection : "row"
+  },
+  bton2 : {
+    marginTop : hp('1%'),
+    width : wp('90%'),
+    borderWidth : 2,
+    borderColor : '#75D1CB',
+    paddingLeft: hp('4%'),
+    padding : hp("0.4%"),
+    borderRadius :15,
+    justifyContent : "space-between",
+    flexDirection : "row"
+  },
+  live : {
+    fontSize : 20,
+    fontWeight : "600",
+    color : "#fff"
+  },
+  join : {
+    fontSize : 20,
+    color : "#656565",
+    fontWeight : "600"
   },
 });

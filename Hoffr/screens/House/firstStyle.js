@@ -8,7 +8,7 @@ export default StyleSheet.create({
     alignItems: 'center',
   },
   img : {
-    height : hp("120%"),
+    height : hp("110%"),
     width : wp("100%"),
     top : 30,
   },

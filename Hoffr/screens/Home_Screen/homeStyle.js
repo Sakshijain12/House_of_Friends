@@ -8,7 +8,7 @@ export default StyleSheet.create({
     alignItems: 'center',
   },
   img : {
-    height : hp("120%"),
+    height : hp("100%"),
     width : wp("100%"),
     top : 30,
   },
@@ -24,7 +24,8 @@ export default StyleSheet.create({
   },
   question : {
     fontSize :25,
-    textAlign : 'center'  
+    textAlign : 'center',
+    color : "#656565"  
   },
   option1 : {
     fontSize :hp('3.5%'),

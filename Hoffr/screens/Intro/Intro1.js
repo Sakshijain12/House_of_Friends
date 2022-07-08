@@ -8,17 +8,16 @@ const image = require ("../../assets/bg1.png");
 
 export default function Intro1() {
 
+  const navigation = useNavigation();
+  const next = () => {
+    navigation.navigate("Intro2Screen")
+  }
   let [fontsLoaded] = useFonts({
     'Montserrat': require('../../assets/fonts/Montserrat-Regular.ttf'),
   });
 
   if (!fontsLoaded) {
     return null;
-  }
-
-  const navigation = useNavigation();
-  const next = () => {
-    navigation.navigate("Intro2Screen")
   }
   return (
     <View style={styles.container}>

@@ -23,7 +23,7 @@ export default StyleSheet.create({
     backgroundColor : '#F9C460',
     borderRadius : hp('2.5%'),
     marginTop : hp('5%'),
-    marginLeft : wp('-25%'),
+    marginLeft : wp('-30%'),
     position : 'absolute',
   },
   logo:{
@@ -32,17 +32,18 @@ export default StyleSheet.create({
     width : wp('35%'),
   },
   back:{
-    alignItems : 'center',
     borderTopWidth : 1,
     width : width,
     marginTop : hp('1%')
   },
   heading : {
+    alignSelf : 'center',
     fontSize : 20,
     fontWeight : '700',
     marginTop : 10
   },
   pic : {
+    alignSelf : 'center',
     height : hp('20%'),
     width :hp('20%'),
     marginTop : hp('2%'),
@@ -55,8 +56,12 @@ export default StyleSheet.create({
   name : {
     fontSize : 20,
     fontWeight : "600",
+    alignSelf : "center"
   },
   info : {
-    right : wp("20%"),
+    fontSize : 16,
+    marginLeft : wp('10%'),
+    marginTop : hp("2.5%"),
+    fontWeight : "600",
   }
 });
