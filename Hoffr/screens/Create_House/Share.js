@@ -1,5 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
-import { View, Image, Text, ImageBackground } from 'react-native';
+import React, { useState } from "react";
+import {Alert, View, Image, Text, ImageBackground, Modal, Pressable} from 'react-native';
 import styles from "./shareStyle";
 
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -12,7 +12,12 @@ const image = require("../../assets/bg1.png");
 export default function Share() {
     const route = useRoute();
     const myIcon = <Icon name='gear' size={25} />;
+
     const sharing = <Ionicons name="share-social" size = {25}/>
+    const whatsapp = <Ionicons name = "logo-whatsapp" size = {25} color ={"green"}/>
+    const instagram = <Ionicons name = "logo-instagram" size = {25} color ={"orange"}/>
+    const copy = <Ionicons name = "copy-outline" size = {25} color = {"black"} />
+    const [modalVisible, setModalVisible] = useState(false);
 
     let [fontsLoaded] = useFonts({
         'Montserrat': require('../../assets/fonts/Montserrat-Regular.ttf'),
@@ -37,11 +42,43 @@ export default function Share() {
                     <Text style = {[styles.invite, {fontFamily : "Montserrat"}]}>Invite your first housemate!</Text>
                     <View style = {styles.bottom}>
                         <Text style = {styles.bton}> {sharing} </Text>
-                        <Text style={[styles.bton, { fontFamily: "Montserrat" }]}>   Send Invite Link</Text>
+                        <Text style={[styles.bton, { fontFamily: "Montserrat" }]} onPress={() => setModalVisible(true)}>   Send Invite Link</Text>
                     </View>
                 </View>
             </ImageBackground>
-            <StatusBar style="auto" />
+            <View>
+            <Modal
+                    animationType="slide"
+                    transparent={true}
+                    visible={modalVisible}
+                    onRequestClose={() => {
+                        setModalVisible(!modalVisible);
+                    }}
+                >
+                    <View style={styles.centeredView}>
+                        <View style={styles.modalView}>
+
+                            <Pressable
+                                style={[styles.button, styles.buttonClose]}
+                                onPress={() => {Alert.alert("Hii Whatsapp");}}>
+                                <Text style={styles.textStyle}> {whatsapp} </Text>
+                            </Pressable>
+
+                            <Pressable
+                                style={[styles.button, styles.buttonClose]}
+                                onPress={() => {Alert.alert("Hii Instagram");}}>
+                                <Text style={styles.textStyle}> {instagram} </Text>
+                            </Pressable>
+
+                            <Pressable
+                                style={[styles.button, styles.buttonClose]}
+                                onPress={() => {Alert.alert("Copy Joining Code");}}>
+                                <Text style={styles.textStyle}> {copy} </Text>
+                            </Pressable>
+                        </View>
+                    </View>
+                </Modal>
+            </View>
         </View>
     );
 }
