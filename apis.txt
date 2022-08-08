@@ -1,0 +1,17 @@
+INTEGRATED APIs :-
+
+router.post('/sent-otp-registration', validate(authValidator.sentotp), authController.sentotp);
+router.post('/verify-otp-registration', validate(authValidator.verifyOtp), authController.verifyOtp);
+router.post('/register', validate(authValidator.register), authController.register);
+router.post('/send-otp-login' , validate(authValidator.sendOtpLogin) , authController.sendOtpLogin)
+router.post('/login', validate(authValidator.login), authController.login);
+router.post('/create_house', verifyJwtToken, houseController.createHouse);
+router.get('/invitation_link', verifyJwtToken, houseController.getInvite);
+router.post('/create-channel', verifyJwtToken, houseController.createChannel);
+router.get('/get-all-channel', verifyJwtToken, houseController.getAlChannel);
+
+
+TASK DONE - All screen front end frame work and above mentioned api integration.
+TASK TO BE DONE - Adding animations into the intro screens, applying color gradient to buttons and integration of rest APIs.
+
+GITHUB REPO - https://github.com/Sakshijain12/House_of_Friends
