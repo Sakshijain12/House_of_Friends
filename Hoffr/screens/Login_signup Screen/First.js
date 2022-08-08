@@ -3,6 +3,9 @@ import { View, Image, Text, ImageBackground } from 'react-native';
 import styles from "./firstStyle";
 import { useNavigation } from '@react-navigation/native';
 
+import LinearGradient from 'react-native-linear-gradient';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+
 import { useFonts } from 'expo-font';
 const image = require("../../assets/bg1.png");
 
@@ -23,23 +26,25 @@ export default function Login_OR_Signup() {
   if (!fontsLoaded) {
     return null;
   }
-  
+
   return (
-    <View style={styles.container}>
-      <ImageBackground source={image} style={styles.img} imageStyle={{ opacity: 0.1 }}>
-        <View style={styles.logo}>
-          <Image source={require('../../assets/Group30.png')}></Image>
-        </View>
-        <View style={styles.back}>
-          <View style={styles.Bton}>
-            <Text style={[styles.texting, { fontFamily: "Montserrat" }]} onPress={login}>Log In</Text>
+    <SafeAreaProvider>
+      <View style={styles.container}>
+        <ImageBackground source={image} style={styles.img} imageStyle={{ opacity: 0.1 }}>
+          <View style={styles.logo}>
+            <Image source={require('../../assets/Group30.png')}></Image>
           </View>
-          <View style={styles.Bton}>
-            <Text style={[styles.texting, { fontFamily: "Montserrat" }]} onPress={signUp}>Sign Up</Text>
+          <View style={styles.back}>
+            <View style={styles.Bton}>
+              <Text style={[styles.texting, { fontFamily: "Montserrat" }]} onPress={login}>Log In</Text>
+            </View>
+            <View style={styles.Bton}>
+              <Text style={[styles.texting, { fontFamily: "Montserrat" }]} onPress={signUp}>Sign Up</Text>
+            </View>
           </View>
-        </View>
-      </ImageBackground>
-      <StatusBar style="auto" />
-    </View>
+        </ImageBackground>
+        <StatusBar style="auto" />
+      </View>
+    </SafeAreaProvider>
   );
 }

@@ -38,7 +38,7 @@ export default StyleSheet.create({
       padding :hp("1%"),
       color : '#606060',
       borderColor : '#DEDEDE',
-      backgroundColor : "#fff"
+      //backgroundColor : "#fff"
   },
 
   box2 : {
@@ -49,7 +49,7 @@ export default StyleSheet.create({
     padding :hp("1%"),
     color : '#606060',
     borderColor : '#656565',
-    backgroundColor : "#fff"
+    //backgroundColor : "#fff"
 },
 
   put : {
@@ -64,12 +64,17 @@ export default StyleSheet.create({
       borderRadius :12,
       textAlign : 'center',
       borderStyle : 'solid',
-      borderWidth:2,
-      borderColor : '#FDFBFB',
+      //borderWidth:2,
+      //borderColor : '#FDFBFB',
       marginTop :hp('5%'),
       color : '#fff',
       padding :wp('2%'),
-      fontWeight : "700"
+      fontWeight : "700",
+      shadowColor: 'rgba(0, 0, 0, 0.8)',
+    shadowOpacity: 0.8,
+    elevation: 15,
+    shadowRadius: 15 ,
+    shadowOffset : { width: 1, height: 13},
   },
 
 });

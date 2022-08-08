@@ -24,6 +24,11 @@ export default StyleSheet.create({
     padding :5,
     borderRadius :12,
     alignSelf : 'center',
+    shadowColor: 'rgba(0, 0, 0, 0.8)',
+    shadowOpacity: 0.8,
+    elevation: 15,
+    shadowRadius: 15 ,
+    shadowOffset : { width: 1, height: 13},
   },
   texting: {
     color : '#fff',
@@ -33,5 +38,18 @@ export default StyleSheet.create({
   },
   back:{
     marginTop : hp('54%'),
-  }
+  },
+  linearGradient: {
+    flex: 1,
+    paddingLeft: 15,
+    paddingRight: 15,
+    borderRadius: 5
+  },
+  buttonText: {
+    fontSize: 18,
+    textAlign: 'center',
+    margin: 10,
+    color: '#ffffff',
+    backgroundColor: 'transparent',
+  },
 });

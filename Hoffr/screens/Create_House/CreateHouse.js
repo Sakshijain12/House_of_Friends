@@ -11,6 +11,9 @@ const image = require ("../../assets/bg1.png");
 export default function CreateHouse() {
   const camIcon = <Icon name='camera' size={50}/>;
   const [houseName , setHouseName] = useState();
+  //const logo = require("../../assets/Group50.png");
+  const displayIconUrl = require("../../assets/Group50.png");
+
   const navigation = useNavigation();
   const next = () => {
     navigation.navigate('CustomiseHouseScreen',{
@@ -23,6 +26,17 @@ export default function CreateHouse() {
   });
   if (!fontsLoaded) {
     return null;
+  }
+
+  function create_house() {
+    const name = houseName;
+    let data = { name, displayIconUrl };
+    fetch("https://localhost:8000/house/create_house", {
+      method : "POST",
+      body : JSON.stringify(data),
+    }).then((result)=> {
+      result.json();
+    })
   }
 
   return (

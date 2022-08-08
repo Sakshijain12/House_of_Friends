@@ -1,10 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
-import { View, Image, Text, ImageBackground } from 'react-native';
+import { View, Image, Text, ImageBackground, TouchableOpacity, Button } from 'react-native';
 import styles from "./introStyle";
 import { useNavigation } from '@react-navigation/native';
 
 import { useFonts } from 'expo-font';
-const image = require ("../../assets/bg1.png");
+const image = require("../../assets/bg1.png");
 
 export default function Intro1() {
 
@@ -21,7 +21,7 @@ export default function Intro1() {
   }
   return (
     <View style={styles.container}>
-      <ImageBackground source={image} style = {styles.img} imageStyle= {{opacity:0.5}}>
+      <ImageBackground source={image} style={styles.img} imageStyle={{ opacity: 0.2 }}>
         <View style={styles.logo}>
           <Image source={require('../../assets/Group30.png')}></Image>
         </View>

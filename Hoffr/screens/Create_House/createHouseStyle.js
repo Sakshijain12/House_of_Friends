@@ -42,7 +42,7 @@ export default StyleSheet.create({
     marginTop :hp('2%'),
     borderColor : '#656565',
     color : '#606060',
-    backgroundColor : "#fff"
+    //backgroundColor : "#fff"
   },
   bton : {
     marginTop : hp('4%'),

@@ -26,7 +26,7 @@ export default StyleSheet.create({
     textAlign : 'center',
     fontWeight : '500',
     height : hp("45%"),
-    borderRadius : hp('10%'),
+    borderRadius : hp('7%'),
     backgroundColor : "#fff"
   },
   text : {
@@ -50,6 +50,11 @@ export default StyleSheet.create({
     textAlign : 'center',
     fontSize : 20,
     fontWeight : '700',
-    borderRadius : 15
-  }
+    borderRadius : 15,
+    shadowColor: 'rgba(0, 0, 0, 0.8)',
+    shadowOpacity: 0.8,
+    elevation: 15,
+    shadowRadius: 15 ,
+    shadowOffset : { width: 1, height: 13},
+  },
 });

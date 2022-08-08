@@ -40,7 +40,8 @@ export default StyleSheet.create({
     alignItems : 'center',
     borderTopWidth : 1,
     width : width,
-    marginTop : hp('1%')
+    marginTop : hp('1%'),
+    top : hp('-1%')
   },
   welcome : {
     fontWeight : '600',
@@ -52,8 +53,12 @@ export default StyleSheet.create({
     height : hp("18%"),
     width : hp("18%"),
     margin : hp("1%"),
-    borderColor : "green",
+    //borderColor : "green",
     borderWidth : 2
+  },
+  img : {
+    height : hp("90%"),
+    width : wp("100%"),
   },
   name : {
     alignSelf : 'center'
@@ -61,14 +66,19 @@ export default StyleSheet.create({
   bton1 : {
     marginTop : hp('1%'),
     width : wp('90%'),
-    borderWidth : 2,
+    //borderWidth : 2,
     backgroundColor : '#75D1CB',
-    borderColor : '#fff',
+    //borderColor : '#fff',
     paddingLeft : hp('4%'),
     padding : hp("0.4%"),
     borderRadius :15,
     justifyContent : "space-between",
-    flexDirection : "row"
+    flexDirection : "row",
+    shadowColor: 'rgba(0, 0, 0, 0.5)',
+    shadowOpacity: 0.8,
+    elevation: 15,
+    shadowRadius: 15 ,
+    shadowOffset : { width: 1, height: 1},
   },
   bton2 : {
     marginTop : hp('1%'),
@@ -79,7 +89,12 @@ export default StyleSheet.create({
     padding : hp("0.4%"),
     borderRadius :15,
     justifyContent : "space-between",
-    flexDirection : "row"
+    flexDirection : "row",
+    shadowColor: 'rgba(0, 0, 0, 0.1)',
+    shadowOpacity: 0.8,
+    elevation: 15,
+    shadowRadius: 15 ,
+    shadowOffset : { width: 1, height: 1},
   },
   live : {
     fontSize : 20,

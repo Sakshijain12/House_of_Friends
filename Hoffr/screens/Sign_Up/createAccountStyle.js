@@ -35,21 +35,26 @@ export default StyleSheet.create({
       color : '#606060',
       borderColor : '#656565',
       marginBottom : hp('5%'),
-      backgroundColor : "#fff"
+      //backgroundColor : "#fff"
   },
 
   login : {
       borderRadius : 12,
       borderStyle : 'solid',
-      borderWidth:2,
-      borderColor : '#FDFBFB',
+      //borderWidth:2,
+      //borderColor : '#FDFBFB',
       marginTop :hp('4%'),
       textAlign : 'center',
       backgroundColor :'#75D1CB',
       color : '#fff',
       fontSize :20,
       padding :wp('1.5%'),
-      fontWeight : "700"
+      fontWeight : "700",
+      shadowColor: 'rgba(0, 0, 0, 0.8)',
+    shadowOpacity: 0.8,
+    elevation: 15,
+    shadowRadius: 15 ,
+    shadowOffset : { width: 1, height: 13},
   },
 
   options:{
