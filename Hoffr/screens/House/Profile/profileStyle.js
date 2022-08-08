@@ -34,7 +34,8 @@ export default StyleSheet.create({
   back:{
     borderTopWidth : 1,
     width : width,
-    marginTop : hp('1%')
+    marginTop : hp('1%'),
+    top : hp('-1%')
   },
   heading : {
     alignSelf : 'center',

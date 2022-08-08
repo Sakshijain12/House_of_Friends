@@ -41,7 +41,7 @@ export default StyleSheet.create({
       fontSize:18,
       padding :hp("1%"),
       textAlign : 'center',
-      backgroundColor : "#fff"
+      //backgroundColor : "#fff"
   },
 
   join : {
@@ -53,7 +53,12 @@ export default StyleSheet.create({
       color : '#fff',
       margin :wp('15%'),
       padding:hp('0.7%'),
-      fontWeight : '700'
+      fontWeight : '700',
+      shadowColor: 'rgba(0, 0, 0, 0.8)',
+    shadowOpacity: 0.8,
+    elevation: 15,
+    shadowRadius: 15 ,
+    shadowOffset : { width: 1, height: 13},
   },
 
   or : {

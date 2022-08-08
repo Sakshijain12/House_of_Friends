@@ -26,6 +26,7 @@ export default StyleSheet.create({
     img: {
         height: hp("100%"),
         width: wp("100%"),
+        //top : hp('1%')
     },
     logo: {
         marginTop: hp('5%'),
@@ -42,7 +43,8 @@ export default StyleSheet.create({
         alignItems: 'center',
         borderTopWidth: 1,
         width: width,
-        marginTop: hp('1%')
+        marginTop: hp('1%'),
+        top : hp('-1%')
     },
     house: {
         marginTop: hp('4%'),
@@ -73,19 +75,24 @@ export default StyleSheet.create({
     },
     bottom: {
         width: wp('70%'),
-        borderWidth: 2,
+        //borderWidth: 2,
         backgroundColor: '#75D1CB',
-        borderColor: '#fff',
+        //borderColor: '#fff',
         padding: hp('0.4%'),
         borderRadius: 15,
         fontSize: 20,
         flexDirection : "row",
-        alignItems : "center"
+        alignItems : "center",
+        shadowColor: 'rgba(0, 0, 0, 0.8)',
+    shadowOpacity: 0.8,
+    elevation: 15,
+    shadowRadius: 15 ,
+    shadowOffset : { width: 1, height: 13},
     },
     bton : {
         color : "#fff",
         fontWeight : "700",
-        fontSize : 20
+        fontSize : 20,
     },
     centeredView: {
         flex: 1,

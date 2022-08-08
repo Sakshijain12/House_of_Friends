@@ -41,19 +41,24 @@ export default StyleSheet.create({
     marginTop :hp('2%'),
     borderColor : '#656565',
     color : '#606060',
-    backgroundColor : "#fff"
+    //backgroundColor : "#fff"
   },
   bton : {
     marginTop : hp('10%'),
     width : wp('70%'),
-    borderWidth : 2,
+    //borderWidth : 2,
     backgroundColor : '#75D1CB',
     textAlign : 'center',
-    borderColor : '#fff',
+    //borderColor : '#fff',
     padding : hp('0.4%'),
     borderRadius :12,
     fontSize :20,
     color : '#fff',
-    fontWeight : "700"
+    fontWeight : "700",
+    shadowColor: 'rgba(0, 0, 0, 0.8)',
+    shadowOpacity: 0.8,
+    elevation: 15,
+    shadowRadius: 15 ,
+    shadowOffset : { width: 1, height: 13},
   },
 });

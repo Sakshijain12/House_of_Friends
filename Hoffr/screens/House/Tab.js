@@ -16,7 +16,7 @@ export default function TabPlace() {
       <Tab.Navigator tabBarOptions={{ showLabel: false }} screenOptions={({ route }) => ({
         headerShown: false,
         tabBarStyle: {
-          height: 50,
+          //height: 50,
           position: 'absolute',
           borderTopLeftRadius: 30,
           borderTopRightRadius: 30,
@@ -25,10 +25,14 @@ export default function TabPlace() {
             width: 1,
             height: 50,
           },
-          shadowOpacity: 0.6,
+          bottom : 10,
+          //borderBottomWidth : 1,
+          shadowOpacity: 0.2,
           shadowRadius: 24.0,
-          shadowColor : 'gray',
+          shadowColor : '#000',
           elevation: 24,
+          //bottom : 0,
+          padding : 10,
         },
         tabBarIcon: ({ color }) => {
           let iconName;

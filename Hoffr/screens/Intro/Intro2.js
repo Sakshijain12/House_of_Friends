@@ -23,7 +23,7 @@ export default function Intro2() {
   
   return (
     <View style={styles.container}>
-      <ImageBackground source={image} style={styles.img} imageStyle={{ opacity: 0.5 }}>
+      <ImageBackground source={image} style={styles.img} imageStyle={{ opacity: 0.2 }}>
         <View style={styles.logo}>
           <Image source={require('../../assets/Group30.png')}></Image>
         </View>

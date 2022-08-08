@@ -10,29 +10,47 @@ const DATA = [
     pic: "../../../assets/Dp.png",
     name: 'Javed',
     active: "Active",
-    status: "On Voice Call"
+    status: "On Voice Call",
+    isActive : true
   },
   {
     id: '2',
     pic: "../../../assets/Dp.png",
     name: 'Priyanka',
     active: "Active",
-    status: "On Video Call"
+    status: "On Video Call",
+    isActive : true
   },
   {
     id: '3',
     pic: "../../../assets/Dp.png",
     name: 'Mohit',
     active: "Inactive",
-    status: "Last active 2 hr. ago"
+    status: "Last active 2 hr. ago",
+    isActive : false
   },
 ];
 
 const image = require("../../../assets/bg1.png");
 
-const Item = ({ pic, name, active, status }) => (
+function ActiveCard() {
+  return <Image source={require("../../../assets/Dp.png")} style={[styles.dp, {borderColor : 'green'}]}></Image> ;
+}
+
+function InactiveCard() {
+  return <Image source={require("../../../assets/Dp.png")} style={[styles.dp, {borderColor : 'grey'}]}></Image> ;
+}
+
+const DefaultRouteHandler = ({isActive}) => {
+  if (isActive) {
+    return <ActiveCard />;
+  }
+  return <InactiveCard />;
+};
+
+const Item = ({ pic, name, active, status, isActive }) => (
   <View style={styles.item}>
-    <Image source={require("../../../assets/Dp.png")} style={styles.dp}></Image>
+    <DefaultRouteHandler isActive = {isActive} />
     <Text style={styles.name}>{name}</Text>
     <Text style={styles.name}>{active}</Text>
     <Text style={styles.name}>{status}</Text>
@@ -46,7 +64,7 @@ export default function HouseHome() {
   const arrow = <Ionicons name="chevron-forward-outline" size={25} color = "#656565"/>
 
   const renderItem = ({ item }) => (
-    <Item pic={item.pic} name={item.name} active={item.active} status={item.status} />
+    <Item pic={item.pic} name={item.name} active={item.active} status={item.status} isActive = {item.isActive}/>
   );
 
 

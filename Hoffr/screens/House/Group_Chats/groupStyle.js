@@ -41,9 +41,10 @@ export default StyleSheet.create({
     width : wp("100%"),
   },
   back:{
-    borderTopWidth : 0.5,
+    //borderTopWidth : 0.5,
     width : width,
-    marginTop : hp('1%')
+    marginTop : hp('1%'),
+    top : hp('-1%')
   },
   heading : {
     flexDirection : "row",

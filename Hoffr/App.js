@@ -2,6 +2,8 @@ import Intro1 from './screens/Intro/Intro1';
 import Intro2 from './screens/Intro/Intro2';
 import Intro3 from './screens/Intro/Intro3';
 
+import Intro from './screens/Intro/Intro';
+
 import Login_OR_Signup from './screens/Login_signup Screen/First';
 import LoginPage from './screens/Login/Login';
 import LoginVerificationPage from './screens/Login/LoginVerification';
@@ -29,6 +31,7 @@ const  Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
+    //<Intro></Intro>
     <NavigationContainer>
       <Stack.Navigator screenOptions= {{headerShown : false}}>
       <Stack.Screen name = 'Intro1Screen' component={Intro1}></Stack.Screen>
@@ -56,5 +59,6 @@ export default function App() {
         <Stack.Screen name='TabScreen' component={TabPlace}></Stack.Screen>
       </Stack.Navigator>  
     </NavigationContainer>
+    
   )
 }

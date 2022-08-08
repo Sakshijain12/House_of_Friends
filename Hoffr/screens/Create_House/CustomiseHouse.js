@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Modal, Text, Pressable, View, ImageBackground, Image, TextInput } from "react-native";
+import { Modal, Text, Pressable, View, ImageBackground, Image, TextInput, TouchableOpacity } from "react-native";
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { useNavigation, useRoute } from '@react-navigation/native';
 
@@ -7,9 +7,6 @@ import { useFonts } from 'expo-font';
 import styles from './customiseHouseStyle';
 
 const image = require("../../assets/bg1.png");
-let Array = [
-    { id: '1', name: "Chat Channel" },
-]
 
 export default function App() {
     const myIcon = <Icon name="plus" size={15} color="black" style={styles.icon} />;
@@ -27,30 +24,43 @@ export default function App() {
     const [chat, setChat] = useState(false);
     const [live, setLive] = useState(false);
 
-    const [name, setName] = useState('')
-
-    const addChannel = () => {
-        if (name == "") return
-
-        Array.push({ key: (Array.length + 1).toString(), name })
-        setName('')
-    }
-
-    const logInput = (input) => {
-        setName(input)
-    }
-
-    const renderTip = ({ item }) => {
-        return (
-            <Text style={styles.box}>{item.name}</Text>
-        )
-    }
-
     let [fontsLoaded] = useFonts({
         'Montserrat': require('../../assets/fonts/Montserrat-Regular.ttf'),
     });
     if (!fontsLoaded) {
         return null;
+    }
+
+    const channel_icon = require("../../assets/GrpDP.png");
+    const house_obj_id = "123456";
+
+    function create_channel() {
+        let data;
+        if (chat) {
+            data = { chat, house_obj_id, channel_icon };
+        }
+        else if (live) {
+            data = { live, house_obj_id, channel_icon };
+        }
+        fetch("https://localhost:8000/house/create_channel", {
+            method: "POST",
+            body: JSON.stringify(data),
+        }).then((result) => {
+            result.json();
+        })
+    }
+
+    function getAlChannel() {
+        fetch("https://localhost:8000/house/get_all_channel", {
+            method: "GET",
+            body: JSON.stringify(data),
+        }).then((response) => response.json())
+        .then((responseJson) => {
+            return (JSON.stringify(responseJson));
+        })
+        .catch((error) => {
+            return (JSON.stringify(error));
+        })
     }
 
     return (
@@ -64,7 +74,11 @@ export default function App() {
                     <Image source={require("../../assets/GrpDP.png")} style={styles.pic}></Image>
                     <Text style={[styles.newChannel, { fontFamily: "Montserrat" }]}>Customise Channels</Text>
 
-                    <Text style={[styles.box, { fontFamily: "Montserrat" }]}>Chat Channel <Text style={[styles.text, { fontFamily: "Montserrat" }]}>{"("}Default{")"}</Text>{"\n"} Live Channel <Text style={[styles.text, { fontFamily: "Montserrat" }]}>{"("}Default{")"}</Text></Text>
+                    <Text style={[styles.box, { fontFamily: "Montserrat" }]}>Chat Channel <Text style={[styles.text, { fontFamily: "Montserrat" }]}>{"("}Default{")"}</Text>{"\n"} Live Channel <Text style={[styles.text, { fontFamily: "Montserrat" }]}>{"("}Default{")"} {"\n"}
+                        <Text>
+                            {getAlChannel}
+                        </Text>
+                    </Text></Text>
 
                     <Text style={[styles.newChannel, { fontFamily: "Montserrat" }]} onPress={() => setModalVisible(true)}>{myIcon} New Channel</Text>
                     <Text style={[styles.bton, { fontFamily: "Montserrat" }]} onPress={share}> Create House</Text>

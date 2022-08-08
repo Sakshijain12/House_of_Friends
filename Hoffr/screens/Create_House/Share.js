@@ -27,6 +27,19 @@ export default function Share() {
         return null;
     }
 
+    function invitation_link() {
+        fetch("https://localhost:8000/house/invitation_link", {
+            method: "GET",
+            body: JSON.stringify(data),
+        }).then((response) => response.json())
+        .then((responseJson) => {
+            return (JSON.stringify(responseJson));
+        })
+        .catch((error) => {
+            return (JSON.stringify(error));
+        })
+    }
+
     return (
         <View style={styles.container}>
             <View style={styles.top}>
@@ -72,7 +85,7 @@ export default function Share() {
 
                             <Pressable
                                 style={[styles.button, styles.buttonClose]}
-                                onPress={() => {Alert.alert("Copy Joining Code");}}>
+                                onPress={() => {Alert.alert({invitation_link});}}>
                                 <Text style={styles.textStyle}> {copy} </Text>
                             </Pressable>
                         </View>

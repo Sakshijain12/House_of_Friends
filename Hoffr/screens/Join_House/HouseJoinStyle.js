@@ -42,7 +42,8 @@ export default StyleSheet.create({
     alignItems : 'center',
     borderTopWidth : 1,
     width : width,
-    marginTop : hp('1%')
+    marginTop : hp('1%'),
+    top : hp('-1%')
   },
   welcome : {
     marginTop : hp('5%'),
@@ -78,15 +79,20 @@ export default StyleSheet.create({
     position : 'absolute',
     top : hp('80%'),
     width : wp('70%'),
-    borderWidth : 2,
+    //borderWidth : 2,
     backgroundColor : '#75D1CB',
     textAlign : 'center',
-    borderColor : '#fff',
+    //borderColor : '#fff',
     padding : hp('0.4%'),
     borderRadius :15,
     fontSize :20,
     color : '#fff',
-    fontWeight : '700'
+    fontWeight : '700',
+    shadowColor: 'rgba(0, 0, 0, 0.8)',
+    shadowOpacity: 0.8,
+    elevation: 15,
+    shadowRadius: 15 ,
+    shadowOffset : { width: 1, height: 13},
   },
   box : {
     borderRadius : 15,
